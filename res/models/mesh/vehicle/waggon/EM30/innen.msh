@@ -1,0 +1,54 @@
+function data()
+return {
+	matConfigs = {
+		{ 0, }, 
+	},
+	subMeshes = {
+		{
+			indices = {
+				normal = {
+					count = 184272,
+					offset = 381348,
+				},
+				position = {
+					count = 184272,
+					offset = 565620,
+				},
+				tangent = {
+					count = 184272,
+					offset = 197076,
+				},
+				uv0 = {
+					count = 184272,
+					offset = 749892,
+				},
+			},
+			materials = {
+				"vehicle/waggon/EM30/EM30_rumpf_wagen.mtl", 
+			},
+		}, 
+	},
+	vertexAttr = {
+		normal = {
+			count = 8340,
+			numComp = 3,
+			offset = 29904,
+		},
+		position = {
+			count = 141048,
+			numComp = 3,
+			offset = 38244,
+		},
+		tangent = {
+			count = 29904,
+			numComp = 4,
+			offset = 0,
+		},
+		uv0 = {
+			count = 17784,
+			numComp = 2,
+			offset = 179292,
+		},
+	},
+}
+end

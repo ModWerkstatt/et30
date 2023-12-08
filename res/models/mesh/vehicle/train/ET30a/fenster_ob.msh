@@ -1,0 +1,54 @@
+function data()
+return {
+	matConfigs = {
+		{ 0, }, 
+	},
+	subMeshes = {
+		{
+			indices = {
+				normal = {
+					count = 2472,
+					offset = 8032,
+				},
+				position = {
+					count = 2472,
+					offset = 12976,
+				},
+				tangent = {
+					count = 2472,
+					offset = 10504,
+				},
+				uv0 = {
+					count = 2472,
+					offset = 15448,
+				},
+			},
+			materials = {
+				"vehicle/train/ET30/BR430a_glas.mtl", 
+			},
+		}, 
+	},
+	vertexAttr = {
+		normal = {
+			count = 2040,
+			numComp = 3,
+			offset = 0,
+		},
+		position = {
+			count = 2304,
+			numComp = 3,
+			offset = 4776,
+		},
+		tangent = {
+			count = 2736,
+			numComp = 4,
+			offset = 2040,
+		},
+		uv0 = {
+			count = 952,
+			numComp = 2,
+			offset = 7080,
+		},
+	},
+}
+end

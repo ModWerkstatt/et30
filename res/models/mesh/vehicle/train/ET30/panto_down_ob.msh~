@@ -1,0 +1,54 @@
+function data()
+return {
+	matConfigs = {
+		{ 0, }, 
+	},
+	subMeshes = {
+		{
+			indices = {
+				normal = {
+					count = 44208,
+					offset = 260616,
+				},
+				position = {
+					count = 44208,
+					offset = 127992,
+				},
+				tangent = {
+					count = 44208,
+					offset = 216408,
+				},
+				uv0 = {
+					count = 44208,
+					offset = 172200,
+				},
+			},
+			materials = {
+				"vehicle/train/ET30/ET30_bogie_panto_ob.mtl", 
+			},
+		}, 
+	},
+	vertexAttr = {
+		normal = {
+			count = 16512,
+			numComp = 3,
+			offset = 111480,
+		},
+		position = {
+			count = 25032,
+			numComp = 3,
+			offset = 0,
+		},
+		tangent = {
+			count = 50816,
+			numComp = 4,
+			offset = 60664,
+		},
+		uv0 = {
+			count = 35632,
+			numComp = 2,
+			offset = 25032,
+		},
+	},
+}
+end

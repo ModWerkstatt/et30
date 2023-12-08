@@ -1,0 +1,106 @@
+function data()
+return {
+	animations = {
+		tur_rechts16Action = {
+			params = {
+				keyframes = {
+					{
+						rot = { 0.0, 0.0, 0.0, },
+						time = 0.0,
+						transl = { -12.74896, -1.40518, 0.5705, },
+					},
+					{
+						rot = { 11.75417, -0.0, 0.0, },
+						time = 500.0,
+						transl = { -12.74088, -1.40518, 0.5705, },
+					},
+					{
+						rot = { 71.73016, -0.0, 0.0, },
+						time = 1500.0,
+						transl = { -12.72443, -1.40518, 0.5705, },
+					},
+					{
+						rot = { 85.0, -0.0, 0.0, },
+						time = 2000.0,
+						transl = { -12.72079, -1.40518, 0.5705, },
+					}, 
+				},
+				origin = { 0.0, 0.0, 0.0, },
+			},
+			type = "KEYFRAME",
+		},
+	},
+	matConfigs = {
+		{ 0, 0, }, 
+	},
+	subMeshes = {
+		{
+			indices = {
+				normal = {
+					count = 888,
+					offset = 2724,
+				},
+				position = {
+					count = 888,
+					offset = 1836,
+				},
+				tangent = {
+					count = 888,
+					offset = 3612,
+				},
+				uv0 = {
+					count = 888,
+					offset = 4500,
+				},
+			},
+			materials = {
+				"vehicle/waggon/EM30/EM30_rumpf_wagen.mtl", 
+			},
+		}, {
+			indices = {
+				normal = {
+					count = 24,
+					offset = 5412,
+				},
+				position = {
+					count = 24,
+					offset = 5388,
+				},
+				tangent = {
+					count = 24,
+					offset = 5436,
+				},
+				uv0 = {
+					count = 24,
+					offset = 5460,
+				},
+			},
+			materials = {
+				"vehicle/waggon/EM30/EM30_fenster.mtl", 
+			},
+		}, 
+	},
+	vertexAttr = {
+		normal = {
+			count = 204,
+			numComp = 3,
+			offset = 504,
+		},
+		position = {
+			count = 504,
+			numComp = 3,
+			offset = 0,
+		},
+		tangent = {
+			count = 704,
+			numComp = 4,
+			offset = 708,
+		},
+		uv0 = {
+			count = 424,
+			numComp = 2,
+			offset = 1412,
+		},
+	},
+}
+end

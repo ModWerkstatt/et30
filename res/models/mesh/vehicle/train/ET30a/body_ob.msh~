@@ -1,0 +1,54 @@
+function data()
+return {
+	matConfigs = {
+		{ 0, }, 
+	},
+	subMeshes = {
+		{
+			indices = {
+				normal = {
+					count = 217128,
+					offset = 477408,
+				},
+				position = {
+					count = 217128,
+					offset = 911664,
+				},
+				tangent = {
+					count = 217128,
+					offset = 694536,
+				},
+				uv0 = {
+					count = 217128,
+					offset = 1128792,
+				},
+			},
+			materials = {
+				"vehicle/train/ET30/ET30_rumpf_kopf_ob.mtl", 
+			},
+		}, 
+	},
+	vertexAttr = {
+		normal = {
+			count = 57552,
+			numComp = 3,
+			offset = 0,
+		},
+		position = {
+			count = 133656,
+			numComp = 3,
+			offset = 212160,
+		},
+		tangent = {
+			count = 154608,
+			numComp = 4,
+			offset = 57552,
+		},
+		uv0 = {
+			count = 131592,
+			numComp = 2,
+			offset = 345816,
+		},
+	},
+}
+end

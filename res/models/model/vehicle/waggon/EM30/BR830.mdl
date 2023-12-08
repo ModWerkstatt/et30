@@ -1,0 +1,4091 @@
+function data()
+return {
+	boundingInfo = {
+		bbMax = { 13.4939, 1.4234, 4.17232, },
+		bbMin = { -13.4939, -1.4234, -0.07678, },
+	},
+	collider = {
+		params = { },
+		transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+		type = "MESH",
+	},
+	lods = {
+		{
+			node = {
+				animations = { },
+				children = {
+					{
+					    _meshId = 1,
+					    _origMeshId = 11,
+					    materials = { "vehicle/waggon/EM30/BR830_rumpf_wagen.mtl", },
+					    mesh = "vehicle/waggon/EM30/body.msh",
+					    name = "MSH_body_1",
+					    transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -0, 0, 0, 1, },
+				    },
+                    {
+						children = {
+							{
+								_meshId = 3,
+								_origMeshId = 2,
+								materials = { "vehicle/waggon/EM30/BR830_rumpf_wagen.mtl", },
+								mesh = "vehicle/waggon/EM30/bogie.msh",
+								name = "MSH_bogie_5",
+								transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, -0, 1, },
+							},
+							{
+								_meshId = 4,
+								_origMeshId = 3,
+								materials = { "vehicle/waggon/EM30/BR830_rumpf_wagen.mtl", },
+								mesh = "vehicle/waggon/EM30/rad.msh",
+								name = "MSH_rad_9",
+								transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -1.27137, 0, 0.42762, 1, },
+							},
+							{
+								_meshId = 5,
+								_origMeshId = 4,
+								materials = { "vehicle/waggon/EM30/BR830_rumpf_wagen.mtl", },
+								mesh = "vehicle/waggon/EM30/rad.msh",
+								name = "MSH_rad_10",
+								transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 1.2509, 0, 0.42762, 1, },
+							},
+						},
+						name = "GRP_bogie1_3",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -10.34077, 0, -0.0122, 1, },
+					},
+					{
+						animations = { },
+						children = {
+							{
+								_meshId = 7,
+								_origMeshId = 6,
+								materials = { "vehicle/waggon/EM30/BR830_rumpf_wagen.mtl", },
+								mesh = "vehicle/waggon/EM30/bogie.msh",
+								name = "MSH_bogie_6",
+								transf = { -1, 0, 0, 0, 0, -1, 0, 0, 0, 0, 1, 0, 0, 0, -0, 1, },
+							},
+							{
+								_meshId = 8,
+								_origMeshId = 7,
+								materials = { "vehicle/waggon/EM30/BR830_rumpf_wagen.mtl", },
+								mesh = "vehicle/waggon/EM30/rad.msh",
+								name = "MSH_rad_11",
+								transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -1.27137, 0, 0.42762, 1, },
+							},
+							{
+								_meshId = 9,
+								_origMeshId = 8,
+								materials = { "vehicle/waggon/EM30/BR830_rumpf_wagen.mtl", },
+								mesh = "vehicle/waggon/EM30/rad.msh",
+								name = "MSH_rad_12",
+								transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 1.2509, 0, 0.42762, 1, },
+							},
+						},
+						name = "GRP_bogie2_3",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 10.0906, 0, -0.0122, 1, },
+					},
+					{
+						_meshId = 10,
+						_origMeshId = 9,
+						materials = { "vehicle/waggon/EM30/EM30_fenster.mtl", },
+						mesh = "vehicle/waggon/EM30/fenster.msh",
+						name = "MSH_fenster_3",
+						transf = { 1, 0, 0, 0, -0, 1, 0, 0, 0, 0, 1, 0, -11.81744, -0, 0, 1, },
+					},
+					{
+						_meshId = 11,
+						_origMeshId = 10,
+						materials = { "vehicle/waggon/EM30/BR830_rumpf_wagen.mtl", },
+						mesh = "vehicle/waggon/EM30/innen.msh",
+						name = "MSH_innen_3",
+						transf = { 1, 0, 0, 0, -0, 1, 0, 0, 0, 0, 1, 0, -11.81744, -0, 0, 1, },
+					},
+					{
+						_meshId = 12,
+						_origMeshId = 12,
+						animations = {
+							close_all_doors = {
+								params = {
+									id = "vehicle/train/et30/doorclose/doorclose_tuerl_1.ani",
+								},
+								type = "FILE_REF",
+							},
+							close_doors_left = {
+								params = {
+									id = "vehicle/train/et30/doorclose/doorclose_tuerl_1.ani",
+								},
+								type = "FILE_REF",
+							},
+							open_all_doors = {
+								params = {
+									id = "vehicle/train/et30/dooropen/dooropen_tuerl_1.ani",
+								},
+								type = "FILE_REF",
+							},
+							open_doors_left = {
+								params = {
+									id = "vehicle/train/et30/dooropen/dooropen_tuerl_1.ani",
+								},
+								type = "FILE_REF",
+							},
+						},
+						materials = { "vehicle/waggon/EM30/BR830_rumpf_wagen.mtl", "vehicle/waggon/EM30/EM30_fenster.mtl", },
+						mesh = "vehicle/waggon/EM30/tuerl_1.msh",
+						name = "MSH_tuerl_1_4",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 12.74857, 1.40518, 0.5705, 1, },
+					},
+					{
+						_meshId = 13,
+						_origMeshId = 13,
+						animations = {
+							close_all_doors = {
+								params = {
+									id = "vehicle/train/et30/doorclose/doorclose_tuerl_10.ani",
+								},
+								type = "FILE_REF",
+							},
+							close_doors_left = {
+								params = {
+									id = "vehicle/train/et30/doorclose/doorclose_tuerl_10.ani",
+								},
+								type = "FILE_REF",
+							},
+							open_all_doors = {
+								params = {
+									id = "vehicle/train/et30/dooropen/dooropen_tuerl_10.ani",
+								},
+								type = "FILE_REF",
+							},
+							open_doors_left = {
+								params = {
+									id = "vehicle/train/et30/dooropen/dooropen_tuerl_10.ani",
+								},
+								type = "FILE_REF",
+							},
+						},
+						materials = { "vehicle/waggon/EM30/BR830_rumpf_wagen.mtl", "vehicle/waggon/EM30/EM30_fenster.mtl", },
+						mesh = "vehicle/waggon/EM30/tuerl_10.msh",
+						name = "MSH_tuerl_10_4",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -0.37156, 1.40518, 0.5705, 1, },
+					},
+					{
+						_meshId = 14,
+						_origMeshId = 14,
+						animations = {
+							close_all_doors = {
+								params = {
+									id = "vehicle/train/et30/doorclose/doorclose_tuerl_11.ani",
+								},
+								type = "FILE_REF",
+							},
+							close_doors_left = {
+								params = {
+									id = "vehicle/train/et30/doorclose/doorclose_tuerl_11.ani",
+								},
+								type = "FILE_REF",
+							},
+							open_all_doors = {
+								params = {
+									id = "vehicle/train/et30/dooropen/dooropen_tuerl_11.ani",
+								},
+								type = "FILE_REF",
+							},
+							open_doors_left = {
+								params = {
+									id = "vehicle/train/et30/dooropen/dooropen_tuerl_11.ani",
+								},
+								type = "FILE_REF",
+							},
+						},
+						materials = { "vehicle/waggon/EM30/BR830_rumpf_wagen.mtl", "vehicle/waggon/EM30/EM30_fenster.mtl", },
+						mesh = "vehicle/waggon/EM30/tuerl_11.msh",
+						name = "MSH_tuerl_11_4",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -0.36776, 1.40518, 0.5705, 1, },
+					},
+					{
+						_meshId = 15,
+						_origMeshId = 15,
+						animations = {
+							close_all_doors = {
+								params = {
+									id = "vehicle/train/et30/doorclose/doorclose_tuerl_12.ani",
+								},
+								type = "FILE_REF",
+							},
+							close_doors_left = {
+								params = {
+									id = "vehicle/train/et30/doorclose/doorclose_tuerl_12.ani",
+								},
+								type = "FILE_REF",
+							},
+							open_all_doors = {
+								params = {
+									id = "vehicle/train/et30/dooropen/dooropen_tuerl_12.ani",
+								},
+								type = "FILE_REF",
+							},
+							open_doors_left = {
+								params = {
+									id = "vehicle/train/et30/dooropen/dooropen_tuerl_12.ani",
+								},
+								type = "FILE_REF",
+							},
+						},
+						materials = { "vehicle/waggon/EM30/BR830_rumpf_wagen.mtl", "vehicle/waggon/EM30/EM30_fenster.mtl", },
+						mesh = "vehicle/waggon/EM30/tuerl_12.msh",
+						name = "MSH_tuerl_12_4",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -0.71795, 1.40518, 0.5705, 1, },
+					},
+					{
+						_meshId = 16,
+						_origMeshId = 16,
+						animations = {
+							close_all_doors = {
+								params = {
+									id = "vehicle/train/et30/doorclose/doorclose_tuerl_13.ani",
+								},
+								type = "FILE_REF",
+							},
+							close_doors_left = {
+								params = {
+									id = "vehicle/train/et30/doorclose/doorclose_tuerl_13.ani",
+								},
+								type = "FILE_REF",
+							},
+							open_all_doors = {
+								params = {
+									id = "vehicle/train/et30/dooropen/dooropen_tuerl_13.ani",
+								},
+								type = "FILE_REF",
+							},
+							open_doors_left = {
+								params = {
+									id = "vehicle/train/et30/dooropen/dooropen_tuerl_13.ani",
+								},
+								type = "FILE_REF",
+							},
+						},
+						materials = { "vehicle/waggon/EM30/BR830_rumpf_wagen.mtl", "vehicle/waggon/EM30/EM30_fenster.mtl", },
+						mesh = "vehicle/waggon/EM30/tuerl_13.msh",
+						name = "MSH_tuerl_13_4",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -12.03691, 1.40518, 0.5705, 1, },
+					},
+					{
+						_meshId = 17,
+						_origMeshId = 17,
+						animations = {
+							close_all_doors = {
+								params = {
+									id = "vehicle/train/et30/doorclose/doorclose_tuerl_14.ani",
+								},
+								type = "FILE_REF",
+							},
+							close_doors_left = {
+								params = {
+									id = "vehicle/train/et30/doorclose/doorclose_tuerl_14.ani",
+								},
+								type = "FILE_REF",
+							},
+							open_all_doors = {
+								params = {
+									id = "vehicle/train/et30/dooropen/dooropen_tuerl_14.ani",
+								},
+								type = "FILE_REF",
+							},
+							open_doors_left = {
+								params = {
+									id = "vehicle/train/et30/dooropen/dooropen_tuerl_14.ani",
+								},
+								type = "FILE_REF",
+							},
+						},
+						materials = { "vehicle/waggon/EM30/BR830_rumpf_wagen.mtl", "vehicle/waggon/EM30/EM30_fenster.mtl", },
+						mesh = "vehicle/waggon/EM30/tuerl_14.msh",
+						name = "MSH_tuerl_14_4",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -12.39771, 1.40518, 0.5705, 1, },
+					},
+					{
+						_meshId = 18,
+						_origMeshId = 18,
+						animations = {
+							close_all_doors = {
+								params = {
+									id = "vehicle/train/et30/doorclose/doorclose_tuerl_15.ani",
+								},
+								type = "FILE_REF",
+							},
+							close_doors_left = {
+								params = {
+									id = "vehicle/train/et30/doorclose/doorclose_tuerl_15.ani",
+								},
+								type = "FILE_REF",
+							},
+							open_all_doors = {
+								params = {
+									id = "vehicle/train/et30/dooropen/dooropen_tuerl_15.ani",
+								},
+								type = "FILE_REF",
+							},
+							open_doors_left = {
+								params = {
+									id = "vehicle/train/et30/dooropen/dooropen_tuerl_15.ani",
+								},
+								type = "FILE_REF",
+							},
+						},
+						materials = { "vehicle/waggon/EM30/BR830_rumpf_wagen.mtl", "vehicle/waggon/EM30/EM30_fenster.mtl", },
+						mesh = "vehicle/waggon/EM30/tuerl_15.msh",
+						name = "MSH_tuerl_15_4",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -12.39391, 1.40518, 0.5705, 1, },
+					},
+					{
+						_meshId = 19,
+						_origMeshId = 19,
+						animations = {
+							close_all_doors = {
+								params = {
+									id = "vehicle/train/et30/doorclose/doorclose_tuerl_16.ani",
+								},
+								type = "FILE_REF",
+							},
+							close_doors_left = {
+								params = {
+									id = "vehicle/train/et30/doorclose/doorclose_tuerl_16.ani",
+								},
+								type = "FILE_REF",
+							},
+							open_all_doors = {
+								params = {
+									id = "vehicle/train/et30/dooropen/dooropen_tuerl_16.ani",
+								},
+								type = "FILE_REF",
+							},
+							open_doors_left = {
+								params = {
+									id = "vehicle/train/et30/dooropen/dooropen_tuerl_16.ani",
+								},
+								type = "FILE_REF",
+							},
+						},
+						materials = { "vehicle/waggon/EM30/BR830_rumpf_wagen.mtl", "vehicle/waggon/EM30/EM30_fenster.mtl", },
+						mesh = "vehicle/waggon/EM30/tuerl_16.msh",
+						name = "MSH_tuerl_16_4",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -12.75077, 1.40518, 0.5705, 1, },
+					},
+					{
+						_meshId = 20,
+						_origMeshId = 20,
+						animations = {
+							close_all_doors = {
+								params = {
+									id = "vehicle/train/et30/doorclose/doorclose_tuerl_2.ani",
+								},
+								type = "FILE_REF",
+							},
+							close_doors_left = {
+								params = {
+									id = "vehicle/train/et30/doorclose/doorclose_tuerl_2.ani",
+								},
+								type = "FILE_REF",
+							},
+							open_all_doors = {
+								params = {
+									id = "vehicle/train/et30/dooropen/dooropen_tuerl_2.ani",
+								},
+								type = "FILE_REF",
+							},
+							open_doors_left = {
+								params = {
+									id = "vehicle/train/et30/dooropen/dooropen_tuerl_2.ani",
+								},
+								type = "FILE_REF",
+							},
+						},
+						materials = { "vehicle/waggon/EM30/BR830_rumpf_wagen.mtl", "vehicle/waggon/EM30/EM30_fenster.mtl", },
+						mesh = "vehicle/waggon/EM30/tuerl_2.msh",
+						name = "MSH_tuerl_2_4",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 12.38777, 1.40518, 0.5705, 1, },
+					},
+					{
+						_meshId = 21,
+						_origMeshId = 21,
+						animations = {
+							close_all_doors = {
+								params = {
+									id = "vehicle/train/et30/doorclose/doorclose_tuerl_3.ani",
+								},
+								type = "FILE_REF",
+							},
+							close_doors_left = {
+								params = {
+									id = "vehicle/train/et30/doorclose/doorclose_tuerl_3.ani",
+								},
+								type = "FILE_REF",
+							},
+							open_all_doors = {
+								params = {
+									id = "vehicle/train/et30/dooropen/dooropen_tuerl_3.ani",
+								},
+								type = "FILE_REF",
+							},
+							open_doors_left = {
+								params = {
+									id = "vehicle/train/et30/dooropen/dooropen_tuerl_3.ani",
+								},
+								type = "FILE_REF",
+							},
+						},
+						materials = { "vehicle/waggon/EM30/BR830_rumpf_wagen.mtl", "vehicle/waggon/EM30/EM30_fenster.mtl", },
+						mesh = "vehicle/waggon/EM30/tuerl_3.msh",
+						name = "MSH_tuerl_3_4",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 12.39158, 1.40518, 0.5705, 1, },
+					},
+					{
+						_meshId = 22,
+						_origMeshId = 22,
+						animations = {
+							close_all_doors = {
+								params = {
+									id = "vehicle/train/et30/doorclose/doorclose_tuerl_4.ani",
+								},
+								type = "FILE_REF",
+							},
+							close_doors_left = {
+								params = {
+									id = "vehicle/train/et30/doorclose/doorclose_tuerl_4.ani",
+								},
+								type = "FILE_REF",
+							},
+							open_all_doors = {
+								params = {
+									id = "vehicle/train/et30/dooropen/dooropen_tuerl_4.ani",
+								},
+								type = "FILE_REF",
+							},
+							open_doors_left = {
+								params = {
+									id = "vehicle/train/et30/dooropen/dooropen_tuerl_4.ani",
+								},
+								type = "FILE_REF",
+							},
+						},
+						materials = { "vehicle/waggon/EM30/BR830_rumpf_wagen.mtl", "vehicle/waggon/EM30/EM30_fenster.mtl", },
+						mesh = "vehicle/waggon/EM30/tuerl_4.msh",
+						name = "MSH_tuerl_4_4",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 12.04139, 1.40518, 0.5705, 1, },
+					},
+					{
+						_meshId = 23,
+						_origMeshId = 23,
+						animations = {
+							close_all_doors = {
+								params = {
+									id = "vehicle/train/et30/doorclose/doorclose_tuerl_5.ani",
+								},
+								type = "FILE_REF",
+							},
+							close_doors_left = {
+								params = {
+									id = "vehicle/train/et30/doorclose/doorclose_tuerl_5.ani",
+								},
+								type = "FILE_REF",
+							},
+							open_all_doors = {
+								params = {
+									id = "vehicle/train/et30/dooropen/dooropen_tuerl_5.ani",
+								},
+								type = "FILE_REF",
+							},
+							open_doors_left = {
+								params = {
+									id = "vehicle/train/et30/dooropen/dooropen_tuerl_5.ani",
+								},
+								type = "FILE_REF",
+							},
+						},
+						materials = { "vehicle/waggon/EM30/BR830_rumpf_wagen.mtl", "vehicle/waggon/EM30/EM30_fenster.mtl", },
+						mesh = "vehicle/waggon/EM30/tuerl_5.msh",
+						name = "MSH_tuerl_5_4",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0.72451, 1.40518, 0.5705, 1, },
+					},
+					{
+						_meshId = 24,
+						_origMeshId = 24,
+						animations = {
+							close_all_doors = {
+								params = {
+									id = "vehicle/train/et30/doorclose/doorclose_tuerl_6.ani",
+								},
+								type = "FILE_REF",
+							},
+							close_doors_left = {
+								params = {
+									id = "vehicle/train/et30/doorclose/doorclose_tuerl_6.ani",
+								},
+								type = "FILE_REF",
+							},
+							open_all_doors = {
+								params = {
+									id = "vehicle/train/et30/dooropen/dooropen_tuerl_6.ani",
+								},
+								type = "FILE_REF",
+							},
+							open_doors_left = {
+								params = {
+									id = "vehicle/train/et30/dooropen/dooropen_tuerl_6.ani",
+								},
+								type = "FILE_REF",
+							},
+						},
+						materials = { "vehicle/waggon/EM30/BR830_rumpf_wagen.mtl", "vehicle/waggon/EM30/EM30_fenster.mtl", },
+						mesh = "vehicle/waggon/EM30/tuerl_6.msh",
+						name = "MSH_tuerl_6_4",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0.36371, 1.40518, 0.5705, 1, },
+					},
+					{
+						_meshId = 25,
+						_origMeshId = 25,
+						animations = {
+							close_all_doors = {
+								params = {
+									id = "vehicle/train/et30/doorclose/doorclose_tuerl_7.ani",
+								},
+								type = "FILE_REF",
+							},
+							close_doors_left = {
+								params = {
+									id = "vehicle/train/et30/doorclose/doorclose_tuerl_7.ani",
+								},
+								type = "FILE_REF",
+							},
+							open_all_doors = {
+								params = {
+									id = "vehicle/train/et30/dooropen/dooropen_tuerl_7.ani",
+								},
+								type = "FILE_REF",
+							},
+							open_doors_left = {
+								params = {
+									id = "vehicle/train/et30/dooropen/dooropen_tuerl_7.ani",
+								},
+								type = "FILE_REF",
+							},
+						},
+						materials = { "vehicle/waggon/EM30/BR830_rumpf_wagen.mtl", "vehicle/waggon/EM30/EM30_fenster.mtl", },
+						mesh = "vehicle/waggon/EM30/tuerl_7.msh",
+						name = "MSH_tuerl_7_4",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0.36752, 1.40518, 0.5705, 1, },
+					},
+					{
+						_meshId = 26,
+						_origMeshId = 26,
+						animations = {
+							close_all_doors = {
+								params = {
+									id = "vehicle/train/et30/doorclose/doorclose_tuerl_8.ani",
+								},
+								type = "FILE_REF",
+							},
+							close_doors_left = {
+								params = {
+									id = "vehicle/train/et30/doorclose/doorclose_tuerl_8.ani",
+								},
+								type = "FILE_REF",
+							},
+							open_all_doors = {
+								params = {
+									id = "vehicle/train/et30/dooropen/dooropen_tuerl_8.ani",
+								},
+								type = "FILE_REF",
+							},
+							open_doors_left = {
+								params = {
+									id = "vehicle/train/et30/dooropen/dooropen_tuerl_8.ani",
+								},
+								type = "FILE_REF",
+							},
+						},
+						materials = { "vehicle/waggon/EM30/BR830_rumpf_wagen.mtl", "vehicle/waggon/EM30/EM30_fenster.mtl", },
+						mesh = "vehicle/waggon/EM30/tuerl_8.msh",
+						name = "MSH_tuerl_8_4",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0.01733, 1.40518, 0.5705, 1, },
+					},
+					{
+						_meshId = 27,
+						_origMeshId = 27,
+						animations = {
+							close_all_doors = {
+								params = {
+									id = "vehicle/train/et30/doorclose/doorclose_tuerl_9.ani",
+								},
+								type = "FILE_REF",
+							},
+							close_doors_left = {
+								params = {
+									id = "vehicle/train/et30/doorclose/doorclose_tuerl_9.ani",
+								},
+								type = "FILE_REF",
+							},
+							open_all_doors = {
+								params = {
+									id = "vehicle/train/et30/dooropen/dooropen_tuerl_9.ani",
+								},
+								type = "FILE_REF",
+							},
+							open_doors_left = {
+								params = {
+									id = "vehicle/train/et30/dooropen/dooropen_tuerl_9.ani",
+								},
+								type = "FILE_REF",
+							},
+						},
+						materials = { "vehicle/waggon/EM30/BR830_rumpf_wagen.mtl", "vehicle/waggon/EM30/EM30_fenster.mtl", },
+						mesh = "vehicle/waggon/EM30/tuerl_9.msh",
+						name = "MSH_tuerl_9_4",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -0.01076, 1.40518, 0.5705, 1, },
+					},
+					{
+						_meshId = 28,
+						_origMeshId = 28,
+						animations = {
+							close_all_doors = {
+								params = {
+									id = "vehicle/train/et30/doorclose/doorclose_tuerr_1.ani",
+								},
+								type = "FILE_REF",
+							},
+							close_doors_right = {
+								params = {
+									id = "vehicle/train/et30/doorclose/doorclose_tuerr_1.ani",
+								},
+								type = "FILE_REF",
+							},
+							open_all_doors = {
+								params = {
+									id = "vehicle/train/et30/dooropen/dooropen_tuerr_1.ani",
+								},
+								type = "FILE_REF",
+							},
+							open_doors_right = {
+								params = {
+									id = "vehicle/train/et30/dooropen/dooropen_tuerr_1.ani",
+								},
+								type = "FILE_REF",
+							},
+						},
+						materials = { "vehicle/waggon/EM30/BR830_rumpf_wagen.mtl", "vehicle/waggon/EM30/EM30_fenster.mtl", },
+						mesh = "vehicle/waggon/EM30/tuerr_1.msh",
+						name = "MSH_tuerr_1_4",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 12.74857, -1.40518, 0.5705, 1, },
+					},
+					{
+						_meshId = 29,
+						_origMeshId = 29,
+						animations = {
+							close_all_doors = {
+								params = {
+									id = "vehicle/train/et30/doorclose/doorclose_tuerr_10.ani",
+								},
+								type = "FILE_REF",
+							},
+							close_doors_right = {
+								params = {
+									id = "vehicle/train/et30/doorclose/doorclose_tuerr_10.ani",
+								},
+								type = "FILE_REF",
+							},
+							open_all_doors = {
+								params = {
+									id = "vehicle/train/et30/dooropen/dooropen_tuerr_10.ani",
+								},
+								type = "FILE_REF",
+							},
+							open_doors_right = {
+								params = {
+									id = "vehicle/train/et30/dooropen/dooropen_tuerr_10.ani",
+								},
+								type = "FILE_REF",
+							},
+						},
+						materials = { "vehicle/waggon/EM30/BR830_rumpf_wagen.mtl", "vehicle/waggon/EM30/EM30_fenster.mtl", },
+						mesh = "vehicle/waggon/EM30/tuerr_10.msh",
+						name = "MSH_tuerr_10_4",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -0.37156, -1.40518, 0.5705, 1, },
+					},
+					{
+						_meshId = 30,
+						_origMeshId = 30,
+						animations = {
+							close_all_doors = {
+								params = {
+									id = "vehicle/train/et30/doorclose/doorclose_tuerr_11.ani",
+								},
+								type = "FILE_REF",
+							},
+							close_doors_right = {
+								params = {
+									id = "vehicle/train/et30/doorclose/doorclose_tuerr_11.ani",
+								},
+								type = "FILE_REF",
+							},
+							open_all_doors = {
+								params = {
+									id = "vehicle/train/et30/dooropen/dooropen_tuerr_11.ani",
+								},
+								type = "FILE_REF",
+							},
+							open_doors_right = {
+								params = {
+									id = "vehicle/train/et30/dooropen/dooropen_tuerr_11.ani",
+								},
+								type = "FILE_REF",
+							},
+						},
+						materials = { "vehicle/waggon/EM30/BR830_rumpf_wagen.mtl", "vehicle/waggon/EM30/EM30_fenster.mtl", },
+						mesh = "vehicle/waggon/EM30/tuerr_11.msh",
+						name = "MSH_tuerr_11_4",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -0.36776, -1.40518, 0.5705, 1, },
+					},
+					{
+						_meshId = 31,
+						_origMeshId = 31,
+						animations = {
+							close_all_doors = {
+								params = {
+									id = "vehicle/train/et30/doorclose/doorclose_tuerr_12.ani",
+								},
+								type = "FILE_REF",
+							},
+							close_doors_right = {
+								params = {
+									id = "vehicle/train/et30/doorclose/doorclose_tuerr_12.ani",
+								},
+								type = "FILE_REF",
+							},
+							open_all_doors = {
+								params = {
+									id = "vehicle/train/et30/dooropen/dooropen_tuerr_12.ani",
+								},
+								type = "FILE_REF",
+							},
+							open_doors_right = {
+								params = {
+									id = "vehicle/train/et30/dooropen/dooropen_tuerr_12.ani",
+								},
+								type = "FILE_REF",
+							},
+						},
+						materials = { "vehicle/waggon/EM30/BR830_rumpf_wagen.mtl", "vehicle/waggon/EM30/EM30_fenster.mtl", },
+						mesh = "vehicle/waggon/EM30/tuerr_12.msh",
+						name = "MSH_tuerr_12_4",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -0.71795, -1.40518, 0.5705, 1, },
+					},
+					{
+						_meshId = 32,
+						_origMeshId = 32,
+						animations = {
+							close_all_doors = {
+								params = {
+									id = "vehicle/train/et30/doorclose/doorclose_tuerr_13.ani",
+								},
+								type = "FILE_REF",
+							},
+							close_doors_right = {
+								params = {
+									id = "vehicle/train/et30/doorclose/doorclose_tuerr_13.ani",
+								},
+								type = "FILE_REF",
+							},
+							open_all_doors = {
+								params = {
+									id = "vehicle/train/et30/dooropen/dooropen_tuerr_13.ani",
+								},
+								type = "FILE_REF",
+							},
+							open_doors_right = {
+								params = {
+									id = "vehicle/train/et30/dooropen/dooropen_tuerr_13.ani",
+								},
+								type = "FILE_REF",
+							},
+						},
+						materials = { "vehicle/waggon/EM30/BR830_rumpf_wagen.mtl", "vehicle/waggon/EM30/EM30_fenster.mtl", },
+						mesh = "vehicle/waggon/EM30/tuerr_13.msh",
+						name = "MSH_tuerr_13_4",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -12.03691, -1.40518, 0.5705, 1, },
+					},
+					{
+						_meshId = 33,
+						_origMeshId = 33,
+						animations = {
+							close_all_doors = {
+								params = {
+									id = "vehicle/train/et30/doorclose/doorclose_tuerr_14.ani",
+								},
+								type = "FILE_REF",
+							},
+							close_doors_right = {
+								params = {
+									id = "vehicle/train/et30/doorclose/doorclose_tuerr_14.ani",
+								},
+								type = "FILE_REF",
+							},
+							open_all_doors = {
+								params = {
+									id = "vehicle/train/et30/dooropen/dooropen_tuerr_14.ani",
+								},
+								type = "FILE_REF",
+							},
+							open_doors_right = {
+								params = {
+									id = "vehicle/train/et30/dooropen/dooropen_tuerr_14.ani",
+								},
+								type = "FILE_REF",
+							},
+						},
+						materials = { "vehicle/waggon/EM30/BR830_rumpf_wagen.mtl", "vehicle/waggon/EM30/EM30_fenster.mtl", },
+						mesh = "vehicle/waggon/EM30/tuerr_14.msh",
+						name = "MSH_tuerr_14_4",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -12.39771, -1.40518, 0.5705, 1, },
+					},
+					{
+						_meshId = 34,
+						_origMeshId = 34,
+						animations = {
+							close_all_doors = {
+								params = {
+									id = "vehicle/train/et30/doorclose/doorclose_tuerr_15.ani",
+								},
+								type = "FILE_REF",
+							},
+							close_doors_right = {
+								params = {
+									id = "vehicle/train/et30/doorclose/doorclose_tuerr_15.ani",
+								},
+								type = "FILE_REF",
+							},
+							open_all_doors = {
+								params = {
+									id = "vehicle/train/et30/dooropen/dooropen_tuerr_15.ani",
+								},
+								type = "FILE_REF",
+							},
+							open_doors_right = {
+								params = {
+									id = "vehicle/train/et30/dooropen/dooropen_tuerr_15.ani",
+								},
+								type = "FILE_REF",
+							},
+						},
+						materials = { "vehicle/waggon/EM30/BR830_rumpf_wagen.mtl", "vehicle/waggon/EM30/EM30_fenster.mtl", },
+						mesh = "vehicle/waggon/EM30/tuerr_15.msh",
+						name = "MSH_tuerr_15_4",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -12.39391, -1.40518, 0.5705, 1, },
+					},
+					{
+						_meshId = 35,
+						_origMeshId = 35,
+						animations = {
+							close_all_doors = {
+								params = {
+									id = "vehicle/train/et30/doorclose/doorclose_tuerr_16.ani",
+								},
+								type = "FILE_REF",
+							},
+							close_doors_right = {
+								params = {
+									id = "vehicle/train/et30/doorclose/doorclose_tuerr_16.ani",
+								},
+								type = "FILE_REF",
+							},
+							open_all_doors = {
+								params = {
+									id = "vehicle/train/et30/dooropen/dooropen_tuerr_16.ani",
+								},
+								type = "FILE_REF",
+							},
+							open_doors_right = {
+								params = {
+									id = "vehicle/train/et30/dooropen/dooropen_tuerr_16.ani",
+								},
+								type = "FILE_REF",
+							},
+						},
+						materials = { "vehicle/waggon/EM30/BR830_rumpf_wagen.mtl", "vehicle/waggon/EM30/EM30_fenster.mtl", },
+						mesh = "vehicle/waggon/EM30/tuerr_16.msh",
+						name = "MSH_tuerr_16_4",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -12.74896, -1.40518, 0.5705, 1, },
+					},
+					{
+						_meshId = 36,
+						_origMeshId = 36,
+						animations = {
+							close_all_doors = {
+								params = {
+									id = "vehicle/train/et30/doorclose/doorclose_tuerr_2.ani",
+								},
+								type = "FILE_REF",
+							},
+							close_doors_right = {
+								params = {
+									id = "vehicle/train/et30/doorclose/doorclose_tuerr_2.ani",
+								},
+								type = "FILE_REF",
+							},
+							open_all_doors = {
+								params = {
+									id = "vehicle/train/et30/dooropen/dooropen_tuerr_2.ani",
+								},
+								type = "FILE_REF",
+							},
+							open_doors_right = {
+								params = {
+									id = "vehicle/train/et30/dooropen/dooropen_tuerr_2.ani",
+								},
+								type = "FILE_REF",
+							},
+						},
+						materials = { "vehicle/waggon/EM30/BR830_rumpf_wagen.mtl", "vehicle/waggon/EM30/EM30_fenster.mtl", },
+						mesh = "vehicle/waggon/EM30/tuerr_2.msh",
+						name = "MSH_tuerr_2_4",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 12.38777, -1.40518, 0.5705, 1, },
+					},
+					{
+						_meshId = 37,
+						_origMeshId = 37,
+						animations = {
+							close_all_doors = {
+								params = {
+									id = "vehicle/train/et30/doorclose/doorclose_tuerr_3.ani",
+								},
+								type = "FILE_REF",
+							},
+							close_doors_right = {
+								params = {
+									id = "vehicle/train/et30/doorclose/doorclose_tuerr_3.ani",
+								},
+								type = "FILE_REF",
+							},
+							open_all_doors = {
+								params = {
+									id = "vehicle/train/et30/dooropen/dooropen_tuerr_3.ani",
+								},
+								type = "FILE_REF",
+							},
+							open_doors_right = {
+								params = {
+									id = "vehicle/train/et30/dooropen/dooropen_tuerr_3.ani",
+								},
+								type = "FILE_REF",
+							},
+						},
+						materials = { "vehicle/waggon/EM30/BR830_rumpf_wagen.mtl", "vehicle/waggon/EM30/EM30_fenster.mtl", },
+						mesh = "vehicle/waggon/EM30/tuerr_3.msh",
+						name = "MSH_tuerr_3_4",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 12.39158, -1.40518, 0.5705, 1, },
+					},
+					{
+						_meshId = 38,
+						_origMeshId = 38,
+						animations = {
+							close_all_doors = {
+								params = {
+									id = "vehicle/train/et30/doorclose/doorclose_tuerr_4.ani",
+								},
+								type = "FILE_REF",
+							},
+							close_doors_right = {
+								params = {
+									id = "vehicle/train/et30/doorclose/doorclose_tuerr_4.ani",
+								},
+								type = "FILE_REF",
+							},
+							open_all_doors = {
+								params = {
+									id = "vehicle/train/et30/dooropen/dooropen_tuerr_4.ani",
+								},
+								type = "FILE_REF",
+							},
+							open_doors_right = {
+								params = {
+									id = "vehicle/train/et30/dooropen/dooropen_tuerr_4.ani",
+								},
+								type = "FILE_REF",
+							},
+						},
+						materials = { "vehicle/waggon/EM30/BR830_rumpf_wagen.mtl", "vehicle/waggon/EM30/EM30_fenster.mtl", },
+						mesh = "vehicle/waggon/EM30/tuerr_4.msh",
+						name = "MSH_tuerr_4_4",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 12.04139, -1.40518, 0.5705, 1, },
+					},
+					{
+						_meshId = 39,
+						_origMeshId = 39,
+						animations = {
+							close_all_doors = {
+								params = {
+									id = "vehicle/train/et30/doorclose/doorclose_tuerr_5.ani",
+								},
+								type = "FILE_REF",
+							},
+							close_doors_right = {
+								params = {
+									id = "vehicle/train/et30/doorclose/doorclose_tuerr_5.ani",
+								},
+								type = "FILE_REF",
+							},
+							open_all_doors = {
+								params = {
+									id = "vehicle/train/et30/dooropen/dooropen_tuerr_5.ani",
+								},
+								type = "FILE_REF",
+							},
+							open_doors_right = {
+								params = {
+									id = "vehicle/train/et30/dooropen/dooropen_tuerr_5.ani",
+								},
+								type = "FILE_REF",
+							},
+						},
+						materials = { "vehicle/waggon/EM30/BR830_rumpf_wagen.mtl", "vehicle/waggon/EM30/EM30_fenster.mtl", },
+						mesh = "vehicle/waggon/EM30/tuerr_5.msh",
+						name = "MSH_tuerr_5_4",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0.72451, -1.40518, 0.5705, 1, },
+					},
+					{
+						_meshId = 40,
+						_origMeshId = 40,
+						animations = {
+							close_all_doors = {
+								params = {
+									id = "vehicle/train/et30/doorclose/doorclose_tuerr_6.ani",
+								},
+								type = "FILE_REF",
+							},
+							close_doors_right = {
+								params = {
+									id = "vehicle/train/et30/doorclose/doorclose_tuerr_6.ani",
+								},
+								type = "FILE_REF",
+							},
+							open_all_doors = {
+								params = {
+									id = "vehicle/train/et30/dooropen/dooropen_tuerr_6.ani",
+								},
+								type = "FILE_REF",
+							},
+							open_doors_right = {
+								params = {
+									id = "vehicle/train/et30/dooropen/dooropen_tuerr_6.ani",
+								},
+								type = "FILE_REF",
+							},
+						},
+						materials = { "vehicle/waggon/EM30/BR830_rumpf_wagen.mtl", "vehicle/waggon/EM30/EM30_fenster.mtl", },
+						mesh = "vehicle/waggon/EM30/tuerr_6.msh",
+						name = "MSH_tuerr_6_4",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0.36371, -1.40518, 0.5705, 1, },
+					},
+					{
+						_meshId = 41,
+						_origMeshId = 41,
+						animations = {
+							close_all_doors = {
+								params = {
+									id = "vehicle/train/et30/doorclose/doorclose_tuerr_7.ani",
+								},
+								type = "FILE_REF",
+							},
+							close_doors_right = {
+								params = {
+									id = "vehicle/train/et30/doorclose/doorclose_tuerr_7.ani",
+								},
+								type = "FILE_REF",
+							},
+							open_all_doors = {
+								params = {
+									id = "vehicle/train/et30/dooropen/dooropen_tuerr_7.ani",
+								},
+								type = "FILE_REF",
+							},
+							open_doors_right = {
+								params = {
+									id = "vehicle/train/et30/dooropen/dooropen_tuerr_7.ani",
+								},
+								type = "FILE_REF",
+							},
+						},
+						materials = { "vehicle/waggon/EM30/BR830_rumpf_wagen.mtl", "vehicle/waggon/EM30/EM30_fenster.mtl", },
+						mesh = "vehicle/waggon/EM30/tuerr_7.msh",
+						name = "MSH_tuerr_7_4",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0.36752, -1.40518, 0.5705, 1, },
+					},
+					{
+						_meshId = 42,
+						_origMeshId = 42,
+						animations = {
+							close_all_doors = {
+								params = {
+									id = "vehicle/train/et30/doorclose/doorclose_tuerr_8.ani",
+								},
+								type = "FILE_REF",
+							},
+							close_doors_right = {
+								params = {
+									id = "vehicle/train/et30/doorclose/doorclose_tuerr_8.ani",
+								},
+								type = "FILE_REF",
+							},
+							open_all_doors = {
+								params = {
+									id = "vehicle/train/et30/dooropen/dooropen_tuerr_8.ani",
+								},
+								type = "FILE_REF",
+							},
+							open_doors_right = {
+								params = {
+									id = "vehicle/train/et30/dooropen/dooropen_tuerr_8.ani",
+								},
+								type = "FILE_REF",
+							},
+						},
+						materials = { "vehicle/waggon/EM30/BR830_rumpf_wagen.mtl", "vehicle/waggon/EM30/EM30_fenster.mtl", },
+						mesh = "vehicle/waggon/EM30/tuerr_8.msh",
+						name = "MSH_tuerr_8_4",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0.01733, -1.40518, 0.5705, 1, },
+					},
+					{
+						_meshId = 43,
+						_origMeshId = 43,
+						animations = {
+							close_all_doors = {
+								params = {
+									id = "vehicle/train/et30/doorclose/doorclose_tuerr_9.ani",
+								},
+								type = "FILE_REF",
+							},
+							close_doors_right = {
+								params = {
+									id = "vehicle/train/et30/doorclose/doorclose_tuerr_9.ani",
+								},
+								type = "FILE_REF",
+							},
+							open_all_doors = {
+								params = {
+									id = "vehicle/train/et30/dooropen/dooropen_tuerr_9.ani",
+								},
+								type = "FILE_REF",
+							},
+							open_doors_right = {
+								params = {
+									id = "vehicle/train/et30/dooropen/dooropen_tuerr_9.ani",
+								},
+								type = "FILE_REF",
+							},
+						},
+						materials = { "vehicle/waggon/EM30/BR830_rumpf_wagen.mtl", "vehicle/waggon/EM30/EM30_fenster.mtl", },
+						mesh = "vehicle/waggon/EM30/tuerr_9.msh",
+						name = "MSH_tuerr_9_4",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -0.01076, -1.40518, 0.5705, 1, },
+					},
+				},
+				name = "RootNode",
+				transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+			},
+			static = false,
+			visibleFrom = 0,
+			visibleTo = 200,
+		},
+		{
+			node = {
+				animations = { },
+				children = {
+					{
+					    _meshId = 1,
+					    _origMeshId = 10,
+					    materials = { "vehicle/waggon/EM30/BR830_rumpf_wagen.mtl", },
+					    mesh = "vehicle/waggon/EM30/body_LOD1.msh",
+					    name = "MSH_body_LOD1_1",
+					    transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -0, 0, 0, 1, },
+				    },
+                    {
+						children = {
+							{
+								_meshId = 2,
+								_origMeshId = 3,
+								materials = { "vehicle/waggon/EM30/BR830_rumpf_wagen.mtl", },
+								mesh = "vehicle/waggon/EM30/bogie_LOD1.msh",
+								name = "MSH_bogie_LOD1_5",
+								transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0.5, 1, },
+							},
+							{
+								_meshId = 3,
+								_origMeshId = 4,
+								materials = { "vehicle/waggon/EM30/BR830_rumpf_wagen.mtl", },
+								mesh = "vehicle/waggon/EM30/rad_LOD1.msh",
+								name = "MSH_rad_LOD1_9",
+								transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -1.27137, 0, 0.42762, 1, },
+							},
+							{
+								_meshId = 4,
+								_origMeshId = 5,
+								materials = { "vehicle/waggon/EM30/BR830_rumpf_wagen.mtl", },
+								mesh = "vehicle/waggon/EM30/rad_LOD1.msh",
+								name = "MSH_rad_LOD1_10",
+								transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 1.2509, 0, 0.42762, 1, },
+							},
+						},
+						name = "GRP_bogie1_LOD1_3",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -10.34077, 0, -0.0122, 1, },
+					},
+					{
+						animations = { },
+						children = {
+							{
+								_meshId = 7,
+								_origMeshId = 6,
+								materials = { "vehicle/waggon/EM30/BR830_rumpf_wagen.mtl", },
+								mesh = "vehicle/waggon/EM30/bogie_LOD1.msh",
+								name = "MSH_bogie_LOD1_6",
+								transf = { -1, 0, 0, 0, 0, -1, 0, 0, 0, 0, 1, 0, 0, 0, 0.5, 1, },
+							},
+							{
+								_meshId = 8,
+								_origMeshId = 7,
+								materials = { "vehicle/waggon/EM30/BR830_rumpf_wagen.mtl", },
+								mesh = "vehicle/waggon/EM30/rad_LOD1.msh",
+								name = "MSH_rad_LOD1_11",
+								transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -1.27137, 0, 0.42762, 1, },
+							},
+							{
+								_meshId = 9,
+								_origMeshId = 8,
+								materials = { "vehicle/waggon/EM30/BR830_rumpf_wagen.mtl", },
+								mesh = "vehicle/waggon/EM30/rad_LOD1.msh",
+								name = "MSH_rad_LOD1_12",
+								transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 1.2509, 0, 0.42762, 1, },
+							},
+						},
+						name = "GRP_bogie2_LOD1_3",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 10.0906, 0, -0.0122, 1, },
+					},
+					{
+						_meshId = 10,
+						_origMeshId = 9,
+						materials = { "vehicle/waggon/EM30/EM30_fenster.mtl", },
+						mesh = "vehicle/waggon/EM30/fenster_LOD1.msh",
+						name = "MSH_fenster_LOD1_5",
+						transf = { 1, 0, 0, 0, -0, 1, 0, 0, 0, 0, 1, 0, -11.81744, -0, 0, 1, },
+					},
+					{
+						_meshId = 11,
+						_origMeshId = 11,
+						animations = {
+							close_all_doors = {
+								params = {
+									id = "vehicle/train/et30/doorclose/doorclose_tuerl_1.ani",
+								},
+								type = "FILE_REF",
+							},
+							close_doors_left = {
+								params = {
+									id = "vehicle/train/et30/doorclose/doorclose_tuerl_1.ani",
+								},
+								type = "FILE_REF",
+							},
+							open_all_doors = {
+								params = {
+									id = "vehicle/train/et30/dooropen/dooropen_tuerl_1.ani",
+								},
+								type = "FILE_REF",
+							},
+							open_doors_left = {
+								params = {
+									id = "vehicle/train/et30/dooropen/dooropen_tuerl_1.ani",
+								},
+								type = "FILE_REF",
+							},
+						},
+						materials = { "vehicle/waggon/EM30/BR830_rumpf_wagen.mtl", "vehicle/waggon/EM30/EM30_fenster.mtl", },
+						mesh = "vehicle/waggon/EM30/tuerl_1.msh",
+						name = "MSH_tuerl_1_5",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 12.74857, 1.40518, 0.5705, 1, },
+					},
+					{
+						_meshId = 12,
+						_origMeshId = 12,
+						animations = {
+							close_all_doors = {
+								params = {
+									id = "vehicle/train/et30/doorclose/doorclose_tuerl_10.ani",
+								},
+								type = "FILE_REF",
+							},
+							close_doors_left = {
+								params = {
+									id = "vehicle/train/et30/doorclose/doorclose_tuerl_10.ani",
+								},
+								type = "FILE_REF",
+							},
+							open_all_doors = {
+								params = {
+									id = "vehicle/train/et30/dooropen/dooropen_tuerl_10.ani",
+								},
+								type = "FILE_REF",
+							},
+							open_doors_left = {
+								params = {
+									id = "vehicle/train/et30/dooropen/dooropen_tuerl_10.ani",
+								},
+								type = "FILE_REF",
+							},
+						},
+						materials = { "vehicle/waggon/EM30/BR830_rumpf_wagen.mtl", "vehicle/waggon/EM30/EM30_fenster.mtl", },
+						mesh = "vehicle/waggon/EM30/tuerl_10.msh",
+						name = "MSH_tuerl_10_5",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -0.37156, 1.40518, 0.5705, 1, },
+					},
+					{
+						_meshId = 13,
+						_origMeshId = 13,
+						animations = {
+							close_all_doors = {
+								params = {
+									id = "vehicle/train/et30/doorclose/doorclose_tuerl_11.ani",
+								},
+								type = "FILE_REF",
+							},
+							close_doors_left = {
+								params = {
+									id = "vehicle/train/et30/doorclose/doorclose_tuerl_11.ani",
+								},
+								type = "FILE_REF",
+							},
+							open_all_doors = {
+								params = {
+									id = "vehicle/train/et30/dooropen/dooropen_tuerl_11.ani",
+								},
+								type = "FILE_REF",
+							},
+							open_doors_left = {
+								params = {
+									id = "vehicle/train/et30/dooropen/dooropen_tuerl_11.ani",
+								},
+								type = "FILE_REF",
+							},
+						},
+						materials = { "vehicle/waggon/EM30/BR830_rumpf_wagen.mtl", "vehicle/waggon/EM30/EM30_fenster.mtl", },
+						mesh = "vehicle/waggon/EM30/tuerl_11.msh",
+						name = "MSH_tuerl_11_5",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -0.36776, 1.40518, 0.5705, 1, },
+					},
+					{
+						_meshId = 14,
+						_origMeshId = 14,
+						animations = {
+							close_all_doors = {
+								params = {
+									id = "vehicle/train/et30/doorclose/doorclose_tuerl_12.ani",
+								},
+								type = "FILE_REF",
+							},
+							close_doors_left = {
+								params = {
+									id = "vehicle/train/et30/doorclose/doorclose_tuerl_12.ani",
+								},
+								type = "FILE_REF",
+							},
+							open_all_doors = {
+								params = {
+									id = "vehicle/train/et30/dooropen/dooropen_tuerl_12.ani",
+								},
+								type = "FILE_REF",
+							},
+							open_doors_left = {
+								params = {
+									id = "vehicle/train/et30/dooropen/dooropen_tuerl_12.ani",
+								},
+								type = "FILE_REF",
+							},
+						},
+						materials = { "vehicle/waggon/EM30/BR830_rumpf_wagen.mtl", "vehicle/waggon/EM30/EM30_fenster.mtl", },
+						mesh = "vehicle/waggon/EM30/tuerl_12.msh",
+						name = "MSH_tuerl_12_5",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -0.71795, 1.40518, 0.5705, 1, },
+					},
+					{
+						_meshId = 15,
+						_origMeshId = 15,
+						animations = {
+							close_all_doors = {
+								params = {
+									id = "vehicle/train/et30/doorclose/doorclose_tuerl_13.ani",
+								},
+								type = "FILE_REF",
+							},
+							close_doors_left = {
+								params = {
+									id = "vehicle/train/et30/doorclose/doorclose_tuerl_13.ani",
+								},
+								type = "FILE_REF",
+							},
+							open_all_doors = {
+								params = {
+									id = "vehicle/train/et30/dooropen/dooropen_tuerl_13.ani",
+								},
+								type = "FILE_REF",
+							},
+							open_doors_left = {
+								params = {
+									id = "vehicle/train/et30/dooropen/dooropen_tuerl_13.ani",
+								},
+								type = "FILE_REF",
+							},
+						},
+						materials = { "vehicle/waggon/EM30/BR830_rumpf_wagen.mtl", "vehicle/waggon/EM30/EM30_fenster.mtl", },
+						mesh = "vehicle/waggon/EM30/tuerl_13.msh",
+						name = "MSH_tuerl_13_5",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -12.03691, 1.40518, 0.5705, 1, },
+					},
+					{
+						_meshId = 16,
+						_origMeshId = 16,
+						animations = {
+							close_all_doors = {
+								params = {
+									id = "vehicle/train/et30/doorclose/doorclose_tuerl_14.ani",
+								},
+								type = "FILE_REF",
+							},
+							close_doors_left = {
+								params = {
+									id = "vehicle/train/et30/doorclose/doorclose_tuerl_14.ani",
+								},
+								type = "FILE_REF",
+							},
+							open_all_doors = {
+								params = {
+									id = "vehicle/train/et30/dooropen/dooropen_tuerl_14.ani",
+								},
+								type = "FILE_REF",
+							},
+							open_doors_left = {
+								params = {
+									id = "vehicle/train/et30/dooropen/dooropen_tuerl_14.ani",
+								},
+								type = "FILE_REF",
+							},
+						},
+						materials = { "vehicle/waggon/EM30/BR830_rumpf_wagen.mtl", "vehicle/waggon/EM30/EM30_fenster.mtl", },
+						mesh = "vehicle/waggon/EM30/tuerl_14.msh",
+						name = "MSH_tuerl_14_5",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -12.39771, 1.40518, 0.5705, 1, },
+					},
+					{
+						_meshId = 17,
+						_origMeshId = 17,
+						animations = {
+							close_all_doors = {
+								params = {
+									id = "vehicle/train/et30/doorclose/doorclose_tuerl_15.ani",
+								},
+								type = "FILE_REF",
+							},
+							close_doors_left = {
+								params = {
+									id = "vehicle/train/et30/doorclose/doorclose_tuerl_15.ani",
+								},
+								type = "FILE_REF",
+							},
+							open_all_doors = {
+								params = {
+									id = "vehicle/train/et30/dooropen/dooropen_tuerl_15.ani",
+								},
+								type = "FILE_REF",
+							},
+							open_doors_left = {
+								params = {
+									id = "vehicle/train/et30/dooropen/dooropen_tuerl_15.ani",
+								},
+								type = "FILE_REF",
+							},
+						},
+						materials = { "vehicle/waggon/EM30/BR830_rumpf_wagen.mtl", "vehicle/waggon/EM30/EM30_fenster.mtl", },
+						mesh = "vehicle/waggon/EM30/tuerl_15.msh",
+						name = "MSH_tuerl_15_5",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -12.39391, 1.40518, 0.5705, 1, },
+					},
+					{
+						_meshId = 18,
+						_origMeshId = 18,
+						animations = {
+							close_all_doors = {
+								params = {
+									id = "vehicle/train/et30/doorclose/doorclose_tuerl_16.ani",
+								},
+								type = "FILE_REF",
+							},
+							close_doors_left = {
+								params = {
+									id = "vehicle/train/et30/doorclose/doorclose_tuerl_16.ani",
+								},
+								type = "FILE_REF",
+							},
+							open_all_doors = {
+								params = {
+									id = "vehicle/train/et30/dooropen/dooropen_tuerl_16.ani",
+								},
+								type = "FILE_REF",
+							},
+							open_doors_left = {
+								params = {
+									id = "vehicle/train/et30/dooropen/dooropen_tuerl_16.ani",
+								},
+								type = "FILE_REF",
+							},
+						},
+						materials = { "vehicle/waggon/EM30/BR830_rumpf_wagen.mtl", "vehicle/waggon/EM30/EM30_fenster.mtl", },
+						mesh = "vehicle/waggon/EM30/tuerl_16.msh",
+						name = "MSH_tuerl_16_5",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -12.75077, 1.40518, 0.5705, 1, },
+					},
+					{
+						_meshId = 19,
+						_origMeshId = 19,
+						animations = {
+							close_all_doors = {
+								params = {
+									id = "vehicle/train/et30/doorclose/doorclose_tuerl_2.ani",
+								},
+								type = "FILE_REF",
+							},
+							close_doors_left = {
+								params = {
+									id = "vehicle/train/et30/doorclose/doorclose_tuerl_2.ani",
+								},
+								type = "FILE_REF",
+							},
+							open_all_doors = {
+								params = {
+									id = "vehicle/train/et30/dooropen/dooropen_tuerl_2.ani",
+								},
+								type = "FILE_REF",
+							},
+							open_doors_left = {
+								params = {
+									id = "vehicle/train/et30/dooropen/dooropen_tuerl_2.ani",
+								},
+								type = "FILE_REF",
+							},
+						},
+						materials = { "vehicle/waggon/EM30/BR830_rumpf_wagen.mtl", "vehicle/waggon/EM30/EM30_fenster.mtl", },
+						mesh = "vehicle/waggon/EM30/tuerl_2.msh",
+						name = "MSH_tuerl_2_5",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 12.38777, 1.40518, 0.5705, 1, },
+					},
+					{
+						_meshId = 20,
+						_origMeshId = 20,
+						animations = {
+							close_all_doors = {
+								params = {
+									id = "vehicle/train/et30/doorclose/doorclose_tuerl_3.ani",
+								},
+								type = "FILE_REF",
+							},
+							close_doors_left = {
+								params = {
+									id = "vehicle/train/et30/doorclose/doorclose_tuerl_3.ani",
+								},
+								type = "FILE_REF",
+							},
+							open_all_doors = {
+								params = {
+									id = "vehicle/train/et30/dooropen/dooropen_tuerl_3.ani",
+								},
+								type = "FILE_REF",
+							},
+							open_doors_left = {
+								params = {
+									id = "vehicle/train/et30/dooropen/dooropen_tuerl_3.ani",
+								},
+								type = "FILE_REF",
+							},
+						},
+						materials = { "vehicle/waggon/EM30/BR830_rumpf_wagen.mtl", "vehicle/waggon/EM30/EM30_fenster.mtl", },
+						mesh = "vehicle/waggon/EM30/tuerl_3.msh",
+						name = "MSH_tuerl_3_5",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 12.39158, 1.40518, 0.5705, 1, },
+					},
+					{
+						_meshId = 21,
+						_origMeshId = 21,
+						animations = {
+							close_all_doors = {
+								params = {
+									id = "vehicle/train/et30/doorclose/doorclose_tuerl_4.ani",
+								},
+								type = "FILE_REF",
+							},
+							close_doors_left = {
+								params = {
+									id = "vehicle/train/et30/doorclose/doorclose_tuerl_4.ani",
+								},
+								type = "FILE_REF",
+							},
+							open_all_doors = {
+								params = {
+									id = "vehicle/train/et30/dooropen/dooropen_tuerl_4.ani",
+								},
+								type = "FILE_REF",
+							},
+							open_doors_left = {
+								params = {
+									id = "vehicle/train/et30/dooropen/dooropen_tuerl_4.ani",
+								},
+								type = "FILE_REF",
+							},
+						},
+						materials = { "vehicle/waggon/EM30/BR830_rumpf_wagen.mtl", "vehicle/waggon/EM30/EM30_fenster.mtl", },
+						mesh = "vehicle/waggon/EM30/tuerl_4.msh",
+						name = "MSH_tuerl_4_5",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 12.04139, 1.40518, 0.5705, 1, },
+					},
+					{
+						_meshId = 22,
+						_origMeshId = 22,
+						animations = {
+							close_all_doors = {
+								params = {
+									id = "vehicle/train/et30/doorclose/doorclose_tuerl_5.ani",
+								},
+								type = "FILE_REF",
+							},
+							close_doors_left = {
+								params = {
+									id = "vehicle/train/et30/doorclose/doorclose_tuerl_5.ani",
+								},
+								type = "FILE_REF",
+							},
+							open_all_doors = {
+								params = {
+									id = "vehicle/train/et30/dooropen/dooropen_tuerl_5.ani",
+								},
+								type = "FILE_REF",
+							},
+							open_doors_left = {
+								params = {
+									id = "vehicle/train/et30/dooropen/dooropen_tuerl_5.ani",
+								},
+								type = "FILE_REF",
+							},
+						},
+						materials = { "vehicle/waggon/EM30/BR830_rumpf_wagen.mtl", "vehicle/waggon/EM30/EM30_fenster.mtl", },
+						mesh = "vehicle/waggon/EM30/tuerl_5.msh",
+						name = "MSH_tuerl_5_5",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0.72451, 1.40518, 0.5705, 1, },
+					},
+					{
+						_meshId = 23,
+						_origMeshId = 23,
+						animations = {
+							close_all_doors = {
+								params = {
+									id = "vehicle/train/et30/doorclose/doorclose_tuerl_6.ani",
+								},
+								type = "FILE_REF",
+							},
+							close_doors_left = {
+								params = {
+									id = "vehicle/train/et30/doorclose/doorclose_tuerl_6.ani",
+								},
+								type = "FILE_REF",
+							},
+							open_all_doors = {
+								params = {
+									id = "vehicle/train/et30/dooropen/dooropen_tuerl_6.ani",
+								},
+								type = "FILE_REF",
+							},
+							open_doors_left = {
+								params = {
+									id = "vehicle/train/et30/dooropen/dooropen_tuerl_6.ani",
+								},
+								type = "FILE_REF",
+							},
+						},
+						materials = { "vehicle/waggon/EM30/BR830_rumpf_wagen.mtl", "vehicle/waggon/EM30/EM30_fenster.mtl", },
+						mesh = "vehicle/waggon/EM30/tuerl_6.msh",
+						name = "MSH_tuerl_6_5",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0.36371, 1.40518, 0.5705, 1, },
+					},
+					{
+						_meshId = 24,
+						_origMeshId = 24,
+						animations = {
+							close_all_doors = {
+								params = {
+									id = "vehicle/train/et30/doorclose/doorclose_tuerl_7.ani",
+								},
+								type = "FILE_REF",
+							},
+							close_doors_left = {
+								params = {
+									id = "vehicle/train/et30/doorclose/doorclose_tuerl_7.ani",
+								},
+								type = "FILE_REF",
+							},
+							open_all_doors = {
+								params = {
+									id = "vehicle/train/et30/dooropen/dooropen_tuerl_7.ani",
+								},
+								type = "FILE_REF",
+							},
+							open_doors_left = {
+								params = {
+									id = "vehicle/train/et30/dooropen/dooropen_tuerl_7.ani",
+								},
+								type = "FILE_REF",
+							},
+						},
+						materials = { "vehicle/waggon/EM30/BR830_rumpf_wagen.mtl", "vehicle/waggon/EM30/EM30_fenster.mtl", },
+						mesh = "vehicle/waggon/EM30/tuerl_7.msh",
+						name = "MSH_tuerl_7_5",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0.36752, 1.40518, 0.5705, 1, },
+					},
+					{
+						_meshId = 25,
+						_origMeshId = 25,
+						animations = {
+							close_all_doors = {
+								params = {
+									id = "vehicle/train/et30/doorclose/doorclose_tuerl_8.ani",
+								},
+								type = "FILE_REF",
+							},
+							close_doors_left = {
+								params = {
+									id = "vehicle/train/et30/doorclose/doorclose_tuerl_8.ani",
+								},
+								type = "FILE_REF",
+							},
+							open_all_doors = {
+								params = {
+									id = "vehicle/train/et30/dooropen/dooropen_tuerl_8.ani",
+								},
+								type = "FILE_REF",
+							},
+							open_doors_left = {
+								params = {
+									id = "vehicle/train/et30/dooropen/dooropen_tuerl_8.ani",
+								},
+								type = "FILE_REF",
+							},
+						},
+						materials = { "vehicle/waggon/EM30/BR830_rumpf_wagen.mtl", "vehicle/waggon/EM30/EM30_fenster.mtl", },
+						mesh = "vehicle/waggon/EM30/tuerl_8.msh",
+						name = "MSH_tuerl_8_5",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0.01733, 1.40518, 0.5705, 1, },
+					},
+					{
+						_meshId = 26,
+						_origMeshId = 26,
+						animations = {
+							close_all_doors = {
+								params = {
+									id = "vehicle/train/et30/doorclose/doorclose_tuerl_9.ani",
+								},
+								type = "FILE_REF",
+							},
+							close_doors_left = {
+								params = {
+									id = "vehicle/train/et30/doorclose/doorclose_tuerl_9.ani",
+								},
+								type = "FILE_REF",
+							},
+							open_all_doors = {
+								params = {
+									id = "vehicle/train/et30/dooropen/dooropen_tuerl_9.ani",
+								},
+								type = "FILE_REF",
+							},
+							open_doors_left = {
+								params = {
+									id = "vehicle/train/et30/dooropen/dooropen_tuerl_9.ani",
+								},
+								type = "FILE_REF",
+							},
+						},
+						materials = { "vehicle/waggon/EM30/BR830_rumpf_wagen.mtl", "vehicle/waggon/EM30/EM30_fenster.mtl", },
+						mesh = "vehicle/waggon/EM30/tuerl_9.msh",
+						name = "MSH_tuerl_9_5",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -0.01076, 1.40518, 0.5705, 1, },
+					},
+					{
+						_meshId = 27,
+						_origMeshId = 27,
+						animations = {
+							close_all_doors = {
+								params = {
+									id = "vehicle/train/et30/doorclose/doorclose_tuerr_1.ani",
+								},
+								type = "FILE_REF",
+							},
+							close_doors_right = {
+								params = {
+									id = "vehicle/train/et30/doorclose/doorclose_tuerr_1.ani",
+								},
+								type = "FILE_REF",
+							},
+							open_all_doors = {
+								params = {
+									id = "vehicle/train/et30/dooropen/dooropen_tuerr_1.ani",
+								},
+								type = "FILE_REF",
+							},
+							open_doors_right = {
+								params = {
+									id = "vehicle/train/et30/dooropen/dooropen_tuerr_1.ani",
+								},
+								type = "FILE_REF",
+							},
+						},
+						materials = { "vehicle/waggon/EM30/BR830_rumpf_wagen.mtl", "vehicle/waggon/EM30/EM30_fenster.mtl", },
+						mesh = "vehicle/waggon/EM30/tuerr_1.msh",
+						name = "MSH_tuerr_1_5",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 12.74857, -1.40518, 0.5705, 1, },
+					},
+					{
+						_meshId = 28,
+						_origMeshId = 28,
+						animations = {
+							close_all_doors = {
+								params = {
+									id = "vehicle/train/et30/doorclose/doorclose_tuerr_10.ani",
+								},
+								type = "FILE_REF",
+							},
+							close_doors_right = {
+								params = {
+									id = "vehicle/train/et30/doorclose/doorclose_tuerr_10.ani",
+								},
+								type = "FILE_REF",
+							},
+							open_all_doors = {
+								params = {
+									id = "vehicle/train/et30/dooropen/dooropen_tuerr_10.ani",
+								},
+								type = "FILE_REF",
+							},
+							open_doors_right = {
+								params = {
+									id = "vehicle/train/et30/dooropen/dooropen_tuerr_10.ani",
+								},
+								type = "FILE_REF",
+							},
+						},
+						materials = { "vehicle/waggon/EM30/BR830_rumpf_wagen.mtl", "vehicle/waggon/EM30/EM30_fenster.mtl", },
+						mesh = "vehicle/waggon/EM30/tuerr_10.msh",
+						name = "MSH_tuerr_10_5",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -0.37156, -1.40518, 0.5705, 1, },
+					},
+					{
+						_meshId = 29,
+						_origMeshId = 29,
+						animations = {
+							close_all_doors = {
+								params = {
+									id = "vehicle/train/et30/doorclose/doorclose_tuerr_11.ani",
+								},
+								type = "FILE_REF",
+							},
+							close_doors_right = {
+								params = {
+									id = "vehicle/train/et30/doorclose/doorclose_tuerr_11.ani",
+								},
+								type = "FILE_REF",
+							},
+							open_all_doors = {
+								params = {
+									id = "vehicle/train/et30/dooropen/dooropen_tuerr_11.ani",
+								},
+								type = "FILE_REF",
+							},
+							open_doors_right = {
+								params = {
+									id = "vehicle/train/et30/dooropen/dooropen_tuerr_11.ani",
+								},
+								type = "FILE_REF",
+							},
+						},
+						materials = { "vehicle/waggon/EM30/BR830_rumpf_wagen.mtl", "vehicle/waggon/EM30/EM30_fenster.mtl", },
+						mesh = "vehicle/waggon/EM30/tuerr_11.msh",
+						name = "MSH_tuerr_11_5",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -0.36776, -1.40518, 0.5705, 1, },
+					},
+					{
+						_meshId = 30,
+						_origMeshId = 30,
+						animations = {
+							close_all_doors = {
+								params = {
+									id = "vehicle/train/et30/doorclose/doorclose_tuerr_12.ani",
+								},
+								type = "FILE_REF",
+							},
+							close_doors_right = {
+								params = {
+									id = "vehicle/train/et30/doorclose/doorclose_tuerr_12.ani",
+								},
+								type = "FILE_REF",
+							},
+							open_all_doors = {
+								params = {
+									id = "vehicle/train/et30/dooropen/dooropen_tuerr_12.ani",
+								},
+								type = "FILE_REF",
+							},
+							open_doors_right = {
+								params = {
+									id = "vehicle/train/et30/dooropen/dooropen_tuerr_12.ani",
+								},
+								type = "FILE_REF",
+							},
+						},
+						materials = { "vehicle/waggon/EM30/BR830_rumpf_wagen.mtl", "vehicle/waggon/EM30/EM30_fenster.mtl", },
+						mesh = "vehicle/waggon/EM30/tuerr_12.msh",
+						name = "MSH_tuerr_12_5",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -0.71795, -1.40518, 0.5705, 1, },
+					},
+					{
+						_meshId = 31,
+						_origMeshId = 31,
+						animations = {
+							close_all_doors = {
+								params = {
+									id = "vehicle/train/et30/doorclose/doorclose_tuerr_13.ani",
+								},
+								type = "FILE_REF",
+							},
+							close_doors_right = {
+								params = {
+									id = "vehicle/train/et30/doorclose/doorclose_tuerr_13.ani",
+								},
+								type = "FILE_REF",
+							},
+							open_all_doors = {
+								params = {
+									id = "vehicle/train/et30/dooropen/dooropen_tuerr_13.ani",
+								},
+								type = "FILE_REF",
+							},
+							open_doors_right = {
+								params = {
+									id = "vehicle/train/et30/dooropen/dooropen_tuerr_13.ani",
+								},
+								type = "FILE_REF",
+							},
+						},
+						materials = { "vehicle/waggon/EM30/BR830_rumpf_wagen.mtl", "vehicle/waggon/EM30/EM30_fenster.mtl", },
+						mesh = "vehicle/waggon/EM30/tuerr_13.msh",
+						name = "MSH_tuerr_13_5",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -12.03691, -1.40518, 0.5705, 1, },
+					},
+					{
+						_meshId = 32,
+						_origMeshId = 32,
+						animations = {
+							close_all_doors = {
+								params = {
+									id = "vehicle/train/et30/doorclose/doorclose_tuerr_14.ani",
+								},
+								type = "FILE_REF",
+							},
+							close_doors_right = {
+								params = {
+									id = "vehicle/train/et30/doorclose/doorclose_tuerr_14.ani",
+								},
+								type = "FILE_REF",
+							},
+							open_all_doors = {
+								params = {
+									id = "vehicle/train/et30/dooropen/dooropen_tuerr_14.ani",
+								},
+								type = "FILE_REF",
+							},
+							open_doors_right = {
+								params = {
+									id = "vehicle/train/et30/dooropen/dooropen_tuerr_14.ani",
+								},
+								type = "FILE_REF",
+							},
+						},
+						materials = { "vehicle/waggon/EM30/BR830_rumpf_wagen.mtl", "vehicle/waggon/EM30/EM30_fenster.mtl", },
+						mesh = "vehicle/waggon/EM30/tuerr_14.msh",
+						name = "MSH_tuerr_14_5",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -12.39771, -1.40518, 0.5705, 1, },
+					},
+					{
+						_meshId = 33,
+						_origMeshId = 33,
+						animations = {
+							close_all_doors = {
+								params = {
+									id = "vehicle/train/et30/doorclose/doorclose_tuerr_15.ani",
+								},
+								type = "FILE_REF",
+							},
+							close_doors_right = {
+								params = {
+									id = "vehicle/train/et30/doorclose/doorclose_tuerr_15.ani",
+								},
+								type = "FILE_REF",
+							},
+							open_all_doors = {
+								params = {
+									id = "vehicle/train/et30/dooropen/dooropen_tuerr_15.ani",
+								},
+								type = "FILE_REF",
+							},
+							open_doors_right = {
+								params = {
+									id = "vehicle/train/et30/dooropen/dooropen_tuerr_15.ani",
+								},
+								type = "FILE_REF",
+							},
+						},
+						materials = { "vehicle/waggon/EM30/BR830_rumpf_wagen.mtl", "vehicle/waggon/EM30/EM30_fenster.mtl", },
+						mesh = "vehicle/waggon/EM30/tuerr_15.msh",
+						name = "MSH_tuerr_15_5",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -12.39391, -1.40518, 0.5705, 1, },
+					},
+					{
+						_meshId = 34,
+						_origMeshId = 34,
+						animations = {
+							close_all_doors = {
+								params = {
+									id = "vehicle/train/et30/doorclose/doorclose_tuerr_16.ani",
+								},
+								type = "FILE_REF",
+							},
+							close_doors_right = {
+								params = {
+									id = "vehicle/train/et30/doorclose/doorclose_tuerr_16.ani",
+								},
+								type = "FILE_REF",
+							},
+							open_all_doors = {
+								params = {
+									id = "vehicle/train/et30/dooropen/dooropen_tuerr_16.ani",
+								},
+								type = "FILE_REF",
+							},
+							open_doors_right = {
+								params = {
+									id = "vehicle/train/et30/dooropen/dooropen_tuerr_16.ani",
+								},
+								type = "FILE_REF",
+							},
+						},
+						materials = { "vehicle/waggon/EM30/BR830_rumpf_wagen.mtl", "vehicle/waggon/EM30/EM30_fenster.mtl", },
+						mesh = "vehicle/waggon/EM30/tuerr_16.msh",
+						name = "MSH_tuerr_16_5",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -12.74896, -1.40518, 0.5705, 1, },
+					},
+					{
+						_meshId = 35,
+						_origMeshId = 35,
+						animations = {
+							close_all_doors = {
+								params = {
+									id = "vehicle/train/et30/doorclose/doorclose_tuerr_2.ani",
+								},
+								type = "FILE_REF",
+							},
+							close_doors_right = {
+								params = {
+									id = "vehicle/train/et30/doorclose/doorclose_tuerr_2.ani",
+								},
+								type = "FILE_REF",
+							},
+							open_all_doors = {
+								params = {
+									id = "vehicle/train/et30/dooropen/dooropen_tuerr_2.ani",
+								},
+								type = "FILE_REF",
+							},
+							open_doors_right = {
+								params = {
+									id = "vehicle/train/et30/dooropen/dooropen_tuerr_2.ani",
+								},
+								type = "FILE_REF",
+							},
+						},
+						materials = { "vehicle/waggon/EM30/BR830_rumpf_wagen.mtl", "vehicle/waggon/EM30/EM30_fenster.mtl", },
+						mesh = "vehicle/waggon/EM30/tuerr_2.msh",
+						name = "MSH_tuerr_2_5",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 12.38777, -1.40518, 0.5705, 1, },
+					},
+					{
+						_meshId = 36,
+						_origMeshId = 36,
+						animations = {
+							close_all_doors = {
+								params = {
+									id = "vehicle/train/et30/doorclose/doorclose_tuerr_3.ani",
+								},
+								type = "FILE_REF",
+							},
+							close_doors_right = {
+								params = {
+									id = "vehicle/train/et30/doorclose/doorclose_tuerr_3.ani",
+								},
+								type = "FILE_REF",
+							},
+							open_all_doors = {
+								params = {
+									id = "vehicle/train/et30/dooropen/dooropen_tuerr_3.ani",
+								},
+								type = "FILE_REF",
+							},
+							open_doors_right = {
+								params = {
+									id = "vehicle/train/et30/dooropen/dooropen_tuerr_3.ani",
+								},
+								type = "FILE_REF",
+							},
+						},
+						materials = { "vehicle/waggon/EM30/BR830_rumpf_wagen.mtl", "vehicle/waggon/EM30/EM30_fenster.mtl", },
+						mesh = "vehicle/waggon/EM30/tuerr_3.msh",
+						name = "MSH_tuerr_3_5",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 12.39158, -1.40518, 0.5705, 1, },
+					},
+					{
+						_meshId = 37,
+						_origMeshId = 37,
+						animations = {
+							close_all_doors = {
+								params = {
+									id = "vehicle/train/et30/doorclose/doorclose_tuerr_4.ani",
+								},
+								type = "FILE_REF",
+							},
+							close_doors_right = {
+								params = {
+									id = "vehicle/train/et30/doorclose/doorclose_tuerr_4.ani",
+								},
+								type = "FILE_REF",
+							},
+							open_all_doors = {
+								params = {
+									id = "vehicle/train/et30/dooropen/dooropen_tuerr_4.ani",
+								},
+								type = "FILE_REF",
+							},
+							open_doors_right = {
+								params = {
+									id = "vehicle/train/et30/dooropen/dooropen_tuerr_4.ani",
+								},
+								type = "FILE_REF",
+							},
+						},
+						materials = { "vehicle/waggon/EM30/BR830_rumpf_wagen.mtl", "vehicle/waggon/EM30/EM30_fenster.mtl", },
+						mesh = "vehicle/waggon/EM30/tuerr_4.msh",
+						name = "MSH_tuerr_4_5",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 12.04139, -1.40518, 0.5705, 1, },
+					},
+					{
+						_meshId = 38,
+						_origMeshId = 38,
+						animations = {
+							close_all_doors = {
+								params = {
+									id = "vehicle/train/et30/doorclose/doorclose_tuerr_5.ani",
+								},
+								type = "FILE_REF",
+							},
+							close_doors_right = {
+								params = {
+									id = "vehicle/train/et30/doorclose/doorclose_tuerr_5.ani",
+								},
+								type = "FILE_REF",
+							},
+							open_all_doors = {
+								params = {
+									id = "vehicle/train/et30/dooropen/dooropen_tuerr_5.ani",
+								},
+								type = "FILE_REF",
+							},
+							open_doors_right = {
+								params = {
+									id = "vehicle/train/et30/dooropen/dooropen_tuerr_5.ani",
+								},
+								type = "FILE_REF",
+							},
+						},
+						materials = { "vehicle/waggon/EM30/BR830_rumpf_wagen.mtl", "vehicle/waggon/EM30/EM30_fenster.mtl", },
+						mesh = "vehicle/waggon/EM30/tuerr_5.msh",
+						name = "MSH_tuerr_5_5",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0.72451, -1.40518, 0.5705, 1, },
+					},
+					{
+						_meshId = 39,
+						_origMeshId = 39,
+						animations = {
+							close_all_doors = {
+								params = {
+									id = "vehicle/train/et30/doorclose/doorclose_tuerr_6.ani",
+								},
+								type = "FILE_REF",
+							},
+							close_doors_right = {
+								params = {
+									id = "vehicle/train/et30/doorclose/doorclose_tuerr_6.ani",
+								},
+								type = "FILE_REF",
+							},
+							open_all_doors = {
+								params = {
+									id = "vehicle/train/et30/dooropen/dooropen_tuerr_6.ani",
+								},
+								type = "FILE_REF",
+							},
+							open_doors_right = {
+								params = {
+									id = "vehicle/train/et30/dooropen/dooropen_tuerr_6.ani",
+								},
+								type = "FILE_REF",
+							},
+						},
+						materials = { "vehicle/waggon/EM30/BR830_rumpf_wagen.mtl", "vehicle/waggon/EM30/EM30_fenster.mtl", },
+						mesh = "vehicle/waggon/EM30/tuerr_6.msh",
+						name = "MSH_tuerr_6_5",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0.36371, -1.40518, 0.5705, 1, },
+					},
+					{
+						_meshId = 40,
+						_origMeshId = 40,
+						animations = {
+							close_all_doors = {
+								params = {
+									id = "vehicle/train/et30/doorclose/doorclose_tuerr_7.ani",
+								},
+								type = "FILE_REF",
+							},
+							close_doors_right = {
+								params = {
+									id = "vehicle/train/et30/doorclose/doorclose_tuerr_7.ani",
+								},
+								type = "FILE_REF",
+							},
+							open_all_doors = {
+								params = {
+									id = "vehicle/train/et30/dooropen/dooropen_tuerr_7.ani",
+								},
+								type = "FILE_REF",
+							},
+							open_doors_right = {
+								params = {
+									id = "vehicle/train/et30/dooropen/dooropen_tuerr_7.ani",
+								},
+								type = "FILE_REF",
+							},
+						},
+						materials = { "vehicle/waggon/EM30/BR830_rumpf_wagen.mtl", "vehicle/waggon/EM30/EM30_fenster.mtl", },
+						mesh = "vehicle/waggon/EM30/tuerr_7.msh",
+						name = "MSH_tuerr_7_5",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0.36752, -1.40518, 0.5705, 1, },
+					},
+					{
+						_meshId = 41,
+						_origMeshId = 41,
+						animations = {
+							close_all_doors = {
+								params = {
+									id = "vehicle/train/et30/doorclose/doorclose_tuerr_8.ani",
+								},
+								type = "FILE_REF",
+							},
+							close_doors_right = {
+								params = {
+									id = "vehicle/train/et30/doorclose/doorclose_tuerr_8.ani",
+								},
+								type = "FILE_REF",
+							},
+							open_all_doors = {
+								params = {
+									id = "vehicle/train/et30/dooropen/dooropen_tuerr_8.ani",
+								},
+								type = "FILE_REF",
+							},
+							open_doors_right = {
+								params = {
+									id = "vehicle/train/et30/dooropen/dooropen_tuerr_8.ani",
+								},
+								type = "FILE_REF",
+							},
+						},
+						materials = { "vehicle/waggon/EM30/BR830_rumpf_wagen.mtl", "vehicle/waggon/EM30/EM30_fenster.mtl", },
+						mesh = "vehicle/waggon/EM30/tuerr_8.msh",
+						name = "MSH_tuerr_8_5",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0.01733, -1.40518, 0.5705, 1, },
+					},
+					{
+						_meshId = 42,
+						_origMeshId = 42,
+						animations = {
+							close_all_doors = {
+								params = {
+									id = "vehicle/train/et30/doorclose/doorclose_tuerr_9.ani",
+								},
+								type = "FILE_REF",
+							},
+							close_doors_right = {
+								params = {
+									id = "vehicle/train/et30/doorclose/doorclose_tuerr_9.ani",
+								},
+								type = "FILE_REF",
+							},
+							open_all_doors = {
+								params = {
+									id = "vehicle/train/et30/dooropen/dooropen_tuerr_9.ani",
+								},
+								type = "FILE_REF",
+							},
+							open_doors_right = {
+								params = {
+									id = "vehicle/train/et30/dooropen/dooropen_tuerr_9.ani",
+								},
+								type = "FILE_REF",
+							},
+						},
+						materials = { "vehicle/waggon/EM30/BR830_rumpf_wagen.mtl", "vehicle/waggon/EM30/EM30_fenster.mtl", },
+						mesh = "vehicle/waggon/EM30/tuerr_9.msh",
+						name = "MSH_tuerr_9_5",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -0.01076, -1.40518, 0.5705, 1, },
+					},
+				},
+				name = "RootNode",
+				transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+			},
+			static = false,
+			visibleFrom = 200,
+			visibleTo = 500,
+		},
+		{
+			node = {
+				animations = { },
+				children = {
+					{
+						_meshId = 1,
+						_origMeshId = 10,
+						materials = { "vehicle/waggon/EM30/BR830_rumpf_wagen.mtl", },
+						mesh = "vehicle/waggon/EM30/body_LOD2.msh",
+						name = "MSH_body_LOD2_2",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -0, 0, 0, 1, },
+					},
+                    {
+						animations = { },
+						children = {
+							{
+								_meshId = 3,
+								_origMeshId = 2,
+								materials = { "vehicle/waggon/EM30/BR830_rumpf_wagen.mtl", },
+								mesh = "vehicle/waggon/EM30/bogie_LOD2.msh",
+								name = "MSH_bogie_LOD2_5",
+								transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0.5, 1, },
+							},
+							{
+								_meshId = 4,
+								_origMeshId = 3,
+								materials = { "vehicle/waggon/EM30/BR830_rumpf_wagen.mtl", },
+								mesh = "vehicle/waggon/EM30/rad_LOD2.msh",
+								name = "MSH_rad_LOD2_9",
+								transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -1.27137, 0, 0.42762, 1, },
+							},
+							{
+								_meshId = 5,
+								_origMeshId = 4,
+								materials = { "vehicle/waggon/EM30/BR830_rumpf_wagen.mtl", },
+								mesh = "vehicle/waggon/EM30/rad_LOD2.msh",
+								name = "MSH_rad_LOD2_10",
+								transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 1.2509, 0, 0.42762, 1, },
+							},
+						},
+						name = "GRP_bogie1_LOD2_3",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -10.34077, 0, -0.0122, 1, },
+					},
+					{
+						animations = { },
+						children = {
+							{
+								_meshId = 7,
+								_origMeshId = 6,
+								materials = { "vehicle/waggon/EM30/BR830_rumpf_wagen.mtl", },
+								mesh = "vehicle/waggon/EM30/bogie_LOD2.msh",
+								name = "MSH_bogie_LOD2_6",
+								transf = { -1, 0, 0, 0, 0, -1, 0, 0, 0, 0, 1, 0, 0, 0, 0.5, 1, },
+							},
+							{
+								_meshId = 8,
+								_origMeshId = 7,
+								materials = { "vehicle/waggon/EM30/BR830_rumpf_wagen.mtl", },
+								mesh = "vehicle/waggon/EM30/rad_LOD2.msh",
+								name = "MSH_rad_LOD2_11",
+								transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -1.27137, 0, 0.42762, 1, },
+							},
+							{
+								_meshId = 9,
+								_origMeshId = 8,
+								materials = { "vehicle/waggon/EM30/BR830_rumpf_wagen.mtl", },
+								mesh = "vehicle/waggon/EM30/rad_LOD2.msh",
+								name = "MSH_rad_LOD2_12",
+								transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 1.2509, 0, 0.42762, 1, },
+							},
+						},
+						name = "GRP_bogie2_LOD2_3",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 10.0906, 0, -0.0122, 1, },
+					},
+					{
+						_meshId = 10,
+						_origMeshId = 9,
+						materials = { "vehicle/waggon/EM30/EM30_fenster.mtl", },
+						mesh = "vehicle/waggon/EM30/fenster_LOD1.msh",
+						name = "MSH_fenster_LOD1_6",
+						transf = { 1, 0, 0, 0, -0, 1, 0, 0, 0, 0, 1, 0, -11.81744, -0, 0, 1, },
+					},
+					{
+						_meshId = 11,
+						_origMeshId = 11,
+						animations = {
+							close_all_doors = {
+								params = {
+									id = "vehicle/train/et30/doorclose/doorclose_tuerl_1.ani",
+								},
+								type = "FILE_REF",
+							},
+							close_doors_left = {
+								params = {
+									id = "vehicle/train/et30/doorclose/doorclose_tuerl_1.ani",
+								},
+								type = "FILE_REF",
+							},
+							open_all_doors = {
+								params = {
+									id = "vehicle/train/et30/dooropen/dooropen_tuerl_1.ani",
+								},
+								type = "FILE_REF",
+							},
+							open_doors_left = {
+								params = {
+									id = "vehicle/train/et30/dooropen/dooropen_tuerl_1.ani",
+								},
+								type = "FILE_REF",
+							},
+						},
+						materials = { "vehicle/waggon/EM30/BR830_rumpf_wagen.mtl", "vehicle/waggon/EM30/EM30_fenster.mtl", },
+						mesh = "vehicle/waggon/EM30/tuerl_1.msh",
+						name = "MSH_tuerl_1_6",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 12.74857, 1.40518, 0.5705, 1, },
+					},
+					{
+						_meshId = 12,
+						_origMeshId = 12,
+						animations = {
+							close_all_doors = {
+								params = {
+									id = "vehicle/train/et30/doorclose/doorclose_tuerl_10.ani",
+								},
+								type = "FILE_REF",
+							},
+							close_doors_left = {
+								params = {
+									id = "vehicle/train/et30/doorclose/doorclose_tuerl_10.ani",
+								},
+								type = "FILE_REF",
+							},
+							open_all_doors = {
+								params = {
+									id = "vehicle/train/et30/dooropen/dooropen_tuerl_10.ani",
+								},
+								type = "FILE_REF",
+							},
+							open_doors_left = {
+								params = {
+									id = "vehicle/train/et30/dooropen/dooropen_tuerl_10.ani",
+								},
+								type = "FILE_REF",
+							},
+						},
+						materials = { "vehicle/waggon/EM30/BR830_rumpf_wagen.mtl", "vehicle/waggon/EM30/EM30_fenster.mtl", },
+						mesh = "vehicle/waggon/EM30/tuerl_10.msh",
+						name = "MSH_tuerl_10_6",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -0.37156, 1.40518, 0.5705, 1, },
+					},
+					{
+						_meshId = 13,
+						_origMeshId = 13,
+						animations = {
+							close_all_doors = {
+								params = {
+									id = "vehicle/train/et30/doorclose/doorclose_tuerl_11.ani",
+								},
+								type = "FILE_REF",
+							},
+							close_doors_left = {
+								params = {
+									id = "vehicle/train/et30/doorclose/doorclose_tuerl_11.ani",
+								},
+								type = "FILE_REF",
+							},
+							open_all_doors = {
+								params = {
+									id = "vehicle/train/et30/dooropen/dooropen_tuerl_11.ani",
+								},
+								type = "FILE_REF",
+							},
+							open_doors_left = {
+								params = {
+									id = "vehicle/train/et30/dooropen/dooropen_tuerl_11.ani",
+								},
+								type = "FILE_REF",
+							},
+						},
+						materials = { "vehicle/waggon/EM30/BR830_rumpf_wagen.mtl", "vehicle/waggon/EM30/EM30_fenster.mtl", },
+						mesh = "vehicle/waggon/EM30/tuerl_11.msh",
+						name = "MSH_tuerl_11_6",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -0.36776, 1.40518, 0.5705, 1, },
+					},
+					{
+						_meshId = 14,
+						_origMeshId = 14,
+						animations = {
+							close_all_doors = {
+								params = {
+									id = "vehicle/train/et30/doorclose/doorclose_tuerl_12.ani",
+								},
+								type = "FILE_REF",
+							},
+							close_doors_left = {
+								params = {
+									id = "vehicle/train/et30/doorclose/doorclose_tuerl_12.ani",
+								},
+								type = "FILE_REF",
+							},
+							open_all_doors = {
+								params = {
+									id = "vehicle/train/et30/dooropen/dooropen_tuerl_12.ani",
+								},
+								type = "FILE_REF",
+							},
+							open_doors_left = {
+								params = {
+									id = "vehicle/train/et30/dooropen/dooropen_tuerl_12.ani",
+								},
+								type = "FILE_REF",
+							},
+						},
+						materials = { "vehicle/waggon/EM30/BR830_rumpf_wagen.mtl", "vehicle/waggon/EM30/EM30_fenster.mtl", },
+						mesh = "vehicle/waggon/EM30/tuerl_12.msh",
+						name = "MSH_tuerl_12_6",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -0.71795, 1.40518, 0.5705, 1, },
+					},
+					{
+						_meshId = 15,
+						_origMeshId = 15,
+						animations = {
+							close_all_doors = {
+								params = {
+									id = "vehicle/train/et30/doorclose/doorclose_tuerl_13.ani",
+								},
+								type = "FILE_REF",
+							},
+							close_doors_left = {
+								params = {
+									id = "vehicle/train/et30/doorclose/doorclose_tuerl_13.ani",
+								},
+								type = "FILE_REF",
+							},
+							open_all_doors = {
+								params = {
+									id = "vehicle/train/et30/dooropen/dooropen_tuerl_13.ani",
+								},
+								type = "FILE_REF",
+							},
+							open_doors_left = {
+								params = {
+									id = "vehicle/train/et30/dooropen/dooropen_tuerl_13.ani",
+								},
+								type = "FILE_REF",
+							},
+						},
+						materials = { "vehicle/waggon/EM30/BR830_rumpf_wagen.mtl", "vehicle/waggon/EM30/EM30_fenster.mtl", },
+						mesh = "vehicle/waggon/EM30/tuerl_13.msh",
+						name = "MSH_tuerl_13_6",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -12.03691, 1.40518, 0.5705, 1, },
+					},
+					{
+						_meshId = 16,
+						_origMeshId = 16,
+						animations = {
+							close_all_doors = {
+								params = {
+									id = "vehicle/train/et30/doorclose/doorclose_tuerl_14.ani",
+								},
+								type = "FILE_REF",
+							},
+							close_doors_left = {
+								params = {
+									id = "vehicle/train/et30/doorclose/doorclose_tuerl_14.ani",
+								},
+								type = "FILE_REF",
+							},
+							open_all_doors = {
+								params = {
+									id = "vehicle/train/et30/dooropen/dooropen_tuerl_14.ani",
+								},
+								type = "FILE_REF",
+							},
+							open_doors_left = {
+								params = {
+									id = "vehicle/train/et30/dooropen/dooropen_tuerl_14.ani",
+								},
+								type = "FILE_REF",
+							},
+						},
+						materials = { "vehicle/waggon/EM30/BR830_rumpf_wagen.mtl", "vehicle/waggon/EM30/EM30_fenster.mtl", },
+						mesh = "vehicle/waggon/EM30/tuerl_14.msh",
+						name = "MSH_tuerl_14_6",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -12.39771, 1.40518, 0.5705, 1, },
+					},
+					{
+						_meshId = 17,
+						_origMeshId = 17,
+						animations = {
+							close_all_doors = {
+								params = {
+									id = "vehicle/train/et30/doorclose/doorclose_tuerl_15.ani",
+								},
+								type = "FILE_REF",
+							},
+							close_doors_left = {
+								params = {
+									id = "vehicle/train/et30/doorclose/doorclose_tuerl_15.ani",
+								},
+								type = "FILE_REF",
+							},
+							open_all_doors = {
+								params = {
+									id = "vehicle/train/et30/dooropen/dooropen_tuerl_15.ani",
+								},
+								type = "FILE_REF",
+							},
+							open_doors_left = {
+								params = {
+									id = "vehicle/train/et30/dooropen/dooropen_tuerl_15.ani",
+								},
+								type = "FILE_REF",
+							},
+						},
+						materials = { "vehicle/waggon/EM30/BR830_rumpf_wagen.mtl", "vehicle/waggon/EM30/EM30_fenster.mtl", },
+						mesh = "vehicle/waggon/EM30/tuerl_15.msh",
+						name = "MSH_tuerl_15_6",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -12.39391, 1.40518, 0.5705, 1, },
+					},
+					{
+						_meshId = 18,
+						_origMeshId = 18,
+						animations = {
+							close_all_doors = {
+								params = {
+									id = "vehicle/train/et30/doorclose/doorclose_tuerl_16.ani",
+								},
+								type = "FILE_REF",
+							},
+							close_doors_left = {
+								params = {
+									id = "vehicle/train/et30/doorclose/doorclose_tuerl_16.ani",
+								},
+								type = "FILE_REF",
+							},
+							open_all_doors = {
+								params = {
+									id = "vehicle/train/et30/dooropen/dooropen_tuerl_16.ani",
+								},
+								type = "FILE_REF",
+							},
+							open_doors_left = {
+								params = {
+									id = "vehicle/train/et30/dooropen/dooropen_tuerl_16.ani",
+								},
+								type = "FILE_REF",
+							},
+						},
+						materials = { "vehicle/waggon/EM30/BR830_rumpf_wagen.mtl", "vehicle/waggon/EM30/EM30_fenster.mtl", },
+						mesh = "vehicle/waggon/EM30/tuerl_16.msh",
+						name = "MSH_tuerl_16_6",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -12.75077, 1.40518, 0.5705, 1, },
+					},
+					{
+						_meshId = 19,
+						_origMeshId = 19,
+						animations = {
+							close_all_doors = {
+								params = {
+									id = "vehicle/train/et30/doorclose/doorclose_tuerl_2.ani",
+								},
+								type = "FILE_REF",
+							},
+							close_doors_left = {
+								params = {
+									id = "vehicle/train/et30/doorclose/doorclose_tuerl_2.ani",
+								},
+								type = "FILE_REF",
+							},
+							open_all_doors = {
+								params = {
+									id = "vehicle/train/et30/dooropen/dooropen_tuerl_2.ani",
+								},
+								type = "FILE_REF",
+							},
+							open_doors_left = {
+								params = {
+									id = "vehicle/train/et30/dooropen/dooropen_tuerl_2.ani",
+								},
+								type = "FILE_REF",
+							},
+						},
+						materials = { "vehicle/waggon/EM30/BR830_rumpf_wagen.mtl", "vehicle/waggon/EM30/EM30_fenster.mtl", },
+						mesh = "vehicle/waggon/EM30/tuerl_2.msh",
+						name = "MSH_tuerl_2_6",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 12.38777, 1.40518, 0.5705, 1, },
+					},
+					{
+						_meshId = 20,
+						_origMeshId = 20,
+						animations = {
+							close_all_doors = {
+								params = {
+									id = "vehicle/train/et30/doorclose/doorclose_tuerl_3.ani",
+								},
+								type = "FILE_REF",
+							},
+							close_doors_left = {
+								params = {
+									id = "vehicle/train/et30/doorclose/doorclose_tuerl_3.ani",
+								},
+								type = "FILE_REF",
+							},
+							open_all_doors = {
+								params = {
+									id = "vehicle/train/et30/dooropen/dooropen_tuerl_3.ani",
+								},
+								type = "FILE_REF",
+							},
+							open_doors_left = {
+								params = {
+									id = "vehicle/train/et30/dooropen/dooropen_tuerl_3.ani",
+								},
+								type = "FILE_REF",
+							},
+						},
+						materials = { "vehicle/waggon/EM30/BR830_rumpf_wagen.mtl", "vehicle/waggon/EM30/EM30_fenster.mtl", },
+						mesh = "vehicle/waggon/EM30/tuerl_3.msh",
+						name = "MSH_tuerl_3_6",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 12.39158, 1.40518, 0.5705, 1, },
+					},
+					{
+						_meshId = 21,
+						_origMeshId = 21,
+						animations = {
+							close_all_doors = {
+								params = {
+									id = "vehicle/train/et30/doorclose/doorclose_tuerl_4.ani",
+								},
+								type = "FILE_REF",
+							},
+							close_doors_left = {
+								params = {
+									id = "vehicle/train/et30/doorclose/doorclose_tuerl_4.ani",
+								},
+								type = "FILE_REF",
+							},
+							open_all_doors = {
+								params = {
+									id = "vehicle/train/et30/dooropen/dooropen_tuerl_4.ani",
+								},
+								type = "FILE_REF",
+							},
+							open_doors_left = {
+								params = {
+									id = "vehicle/train/et30/dooropen/dooropen_tuerl_4.ani",
+								},
+								type = "FILE_REF",
+							},
+						},
+						materials = { "vehicle/waggon/EM30/BR830_rumpf_wagen.mtl", "vehicle/waggon/EM30/EM30_fenster.mtl", },
+						mesh = "vehicle/waggon/EM30/tuerl_4.msh",
+						name = "MSH_tuerl_4_6",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 12.04139, 1.40518, 0.5705, 1, },
+					},
+					{
+						_meshId = 22,
+						_origMeshId = 22,
+						animations = {
+							close_all_doors = {
+								params = {
+									id = "vehicle/train/et30/doorclose/doorclose_tuerl_5.ani",
+								},
+								type = "FILE_REF",
+							},
+							close_doors_left = {
+								params = {
+									id = "vehicle/train/et30/doorclose/doorclose_tuerl_5.ani",
+								},
+								type = "FILE_REF",
+							},
+							open_all_doors = {
+								params = {
+									id = "vehicle/train/et30/dooropen/dooropen_tuerl_5.ani",
+								},
+								type = "FILE_REF",
+							},
+							open_doors_left = {
+								params = {
+									id = "vehicle/train/et30/dooropen/dooropen_tuerl_5.ani",
+								},
+								type = "FILE_REF",
+							},
+						},
+						materials = { "vehicle/waggon/EM30/BR830_rumpf_wagen.mtl", "vehicle/waggon/EM30/EM30_fenster.mtl", },
+						mesh = "vehicle/waggon/EM30/tuerl_5.msh",
+						name = "MSH_tuerl_5_6",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0.72451, 1.40518, 0.5705, 1, },
+					},
+					{
+						_meshId = 23,
+						_origMeshId = 23,
+						animations = {
+							close_all_doors = {
+								params = {
+									id = "vehicle/train/et30/doorclose/doorclose_tuerl_6.ani",
+								},
+								type = "FILE_REF",
+							},
+							close_doors_left = {
+								params = {
+									id = "vehicle/train/et30/doorclose/doorclose_tuerl_6.ani",
+								},
+								type = "FILE_REF",
+							},
+							open_all_doors = {
+								params = {
+									id = "vehicle/train/et30/dooropen/dooropen_tuerl_6.ani",
+								},
+								type = "FILE_REF",
+							},
+							open_doors_left = {
+								params = {
+									id = "vehicle/train/et30/dooropen/dooropen_tuerl_6.ani",
+								},
+								type = "FILE_REF",
+							},
+						},
+						materials = { "vehicle/waggon/EM30/BR830_rumpf_wagen.mtl", "vehicle/waggon/EM30/EM30_fenster.mtl", },
+						mesh = "vehicle/waggon/EM30/tuerl_6.msh",
+						name = "MSH_tuerl_6_6",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0.36371, 1.40518, 0.5705, 1, },
+					},
+					{
+						_meshId = 24,
+						_origMeshId = 24,
+						animations = {
+							close_all_doors = {
+								params = {
+									id = "vehicle/train/et30/doorclose/doorclose_tuerl_7.ani",
+								},
+								type = "FILE_REF",
+							},
+							close_doors_left = {
+								params = {
+									id = "vehicle/train/et30/doorclose/doorclose_tuerl_7.ani",
+								},
+								type = "FILE_REF",
+							},
+							open_all_doors = {
+								params = {
+									id = "vehicle/train/et30/dooropen/dooropen_tuerl_7.ani",
+								},
+								type = "FILE_REF",
+							},
+							open_doors_left = {
+								params = {
+									id = "vehicle/train/et30/dooropen/dooropen_tuerl_7.ani",
+								},
+								type = "FILE_REF",
+							},
+						},
+						materials = { "vehicle/waggon/EM30/BR830_rumpf_wagen.mtl", "vehicle/waggon/EM30/EM30_fenster.mtl", },
+						mesh = "vehicle/waggon/EM30/tuerl_7.msh",
+						name = "MSH_tuerl_7_6",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0.36752, 1.40518, 0.5705, 1, },
+					},
+					{
+						_meshId = 25,
+						_origMeshId = 25,
+						animations = {
+							close_all_doors = {
+								params = {
+									id = "vehicle/train/et30/doorclose/doorclose_tuerl_8.ani",
+								},
+								type = "FILE_REF",
+							},
+							close_doors_left = {
+								params = {
+									id = "vehicle/train/et30/doorclose/doorclose_tuerl_8.ani",
+								},
+								type = "FILE_REF",
+							},
+							open_all_doors = {
+								params = {
+									id = "vehicle/train/et30/dooropen/dooropen_tuerl_8.ani",
+								},
+								type = "FILE_REF",
+							},
+							open_doors_left = {
+								params = {
+									id = "vehicle/train/et30/dooropen/dooropen_tuerl_8.ani",
+								},
+								type = "FILE_REF",
+							},
+						},
+						materials = { "vehicle/waggon/EM30/BR830_rumpf_wagen.mtl", "vehicle/waggon/EM30/EM30_fenster.mtl", },
+						mesh = "vehicle/waggon/EM30/tuerl_8.msh",
+						name = "MSH_tuerl_8_6",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0.01733, 1.40518, 0.5705, 1, },
+					},
+					{
+						_meshId = 26,
+						_origMeshId = 26,
+						animations = {
+							close_all_doors = {
+								params = {
+									id = "vehicle/train/et30/doorclose/doorclose_tuerl_9.ani",
+								},
+								type = "FILE_REF",
+							},
+							close_doors_left = {
+								params = {
+									id = "vehicle/train/et30/doorclose/doorclose_tuerl_9.ani",
+								},
+								type = "FILE_REF",
+							},
+							open_all_doors = {
+								params = {
+									id = "vehicle/train/et30/dooropen/dooropen_tuerl_9.ani",
+								},
+								type = "FILE_REF",
+							},
+							open_doors_left = {
+								params = {
+									id = "vehicle/train/et30/dooropen/dooropen_tuerl_9.ani",
+								},
+								type = "FILE_REF",
+							},
+						},
+						materials = { "vehicle/waggon/EM30/BR830_rumpf_wagen.mtl", "vehicle/waggon/EM30/EM30_fenster.mtl", },
+						mesh = "vehicle/waggon/EM30/tuerl_9.msh",
+						name = "MSH_tuerl_9_6",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -0.01076, 1.40518, 0.5705, 1, },
+					},
+					{
+						_meshId = 27,
+						_origMeshId = 27,
+						animations = {
+							close_all_doors = {
+								params = {
+									id = "vehicle/train/et30/doorclose/doorclose_tuerr_1.ani",
+								},
+								type = "FILE_REF",
+							},
+							close_doors_right = {
+								params = {
+									id = "vehicle/train/et30/doorclose/doorclose_tuerr_1.ani",
+								},
+								type = "FILE_REF",
+							},
+							open_all_doors = {
+								params = {
+									id = "vehicle/train/et30/dooropen/dooropen_tuerr_1.ani",
+								},
+								type = "FILE_REF",
+							},
+							open_doors_right = {
+								params = {
+									id = "vehicle/train/et30/dooropen/dooropen_tuerr_1.ani",
+								},
+								type = "FILE_REF",
+							},
+						},
+						materials = { "vehicle/waggon/EM30/BR830_rumpf_wagen.mtl", "vehicle/waggon/EM30/EM30_fenster.mtl", },
+						mesh = "vehicle/waggon/EM30/tuerr_1.msh",
+						name = "MSH_tuerr_1_6",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 12.74857, -1.40518, 0.5705, 1, },
+					},
+					{
+						_meshId = 28,
+						_origMeshId = 28,
+						animations = {
+							close_all_doors = {
+								params = {
+									id = "vehicle/train/et30/doorclose/doorclose_tuerr_10.ani",
+								},
+								type = "FILE_REF",
+							},
+							close_doors_right = {
+								params = {
+									id = "vehicle/train/et30/doorclose/doorclose_tuerr_10.ani",
+								},
+								type = "FILE_REF",
+							},
+							open_all_doors = {
+								params = {
+									id = "vehicle/train/et30/dooropen/dooropen_tuerr_10.ani",
+								},
+								type = "FILE_REF",
+							},
+							open_doors_right = {
+								params = {
+									id = "vehicle/train/et30/dooropen/dooropen_tuerr_10.ani",
+								},
+								type = "FILE_REF",
+							},
+						},
+						materials = { "vehicle/waggon/EM30/BR830_rumpf_wagen.mtl", "vehicle/waggon/EM30/EM30_fenster.mtl", },
+						mesh = "vehicle/waggon/EM30/tuerr_10.msh",
+						name = "MSH_tuerr_10_6",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -0.37156, -1.40518, 0.5705, 1, },
+					},
+					{
+						_meshId = 29,
+						_origMeshId = 29,
+						animations = {
+							close_all_doors = {
+								params = {
+									id = "vehicle/train/et30/doorclose/doorclose_tuerr_11.ani",
+								},
+								type = "FILE_REF",
+							},
+							close_doors_right = {
+								params = {
+									id = "vehicle/train/et30/doorclose/doorclose_tuerr_11.ani",
+								},
+								type = "FILE_REF",
+							},
+							open_all_doors = {
+								params = {
+									id = "vehicle/train/et30/dooropen/dooropen_tuerr_11.ani",
+								},
+								type = "FILE_REF",
+							},
+							open_doors_right = {
+								params = {
+									id = "vehicle/train/et30/dooropen/dooropen_tuerr_11.ani",
+								},
+								type = "FILE_REF",
+							},
+						},
+						materials = { "vehicle/waggon/EM30/BR830_rumpf_wagen.mtl", "vehicle/waggon/EM30/EM30_fenster.mtl", },
+						mesh = "vehicle/waggon/EM30/tuerr_11.msh",
+						name = "MSH_tuerr_11_6",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -0.36776, -1.40518, 0.5705, 1, },
+					},
+					{
+						_meshId = 30,
+						_origMeshId = 30,
+						animations = {
+							close_all_doors = {
+								params = {
+									id = "vehicle/train/et30/doorclose/doorclose_tuerr_12.ani",
+								},
+								type = "FILE_REF",
+							},
+							close_doors_right = {
+								params = {
+									id = "vehicle/train/et30/doorclose/doorclose_tuerr_12.ani",
+								},
+								type = "FILE_REF",
+							},
+							open_all_doors = {
+								params = {
+									id = "vehicle/train/et30/dooropen/dooropen_tuerr_12.ani",
+								},
+								type = "FILE_REF",
+							},
+							open_doors_right = {
+								params = {
+									id = "vehicle/train/et30/dooropen/dooropen_tuerr_12.ani",
+								},
+								type = "FILE_REF",
+							},
+						},
+						materials = { "vehicle/waggon/EM30/BR830_rumpf_wagen.mtl", "vehicle/waggon/EM30/EM30_fenster.mtl", },
+						mesh = "vehicle/waggon/EM30/tuerr_12.msh",
+						name = "MSH_tuerr_12_6",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -0.71795, -1.40518, 0.5705, 1, },
+					},
+					{
+						_meshId = 31,
+						_origMeshId = 31,
+						animations = {
+							close_all_doors = {
+								params = {
+									id = "vehicle/train/et30/doorclose/doorclose_tuerr_13.ani",
+								},
+								type = "FILE_REF",
+							},
+							close_doors_right = {
+								params = {
+									id = "vehicle/train/et30/doorclose/doorclose_tuerr_13.ani",
+								},
+								type = "FILE_REF",
+							},
+							open_all_doors = {
+								params = {
+									id = "vehicle/train/et30/dooropen/dooropen_tuerr_13.ani",
+								},
+								type = "FILE_REF",
+							},
+							open_doors_right = {
+								params = {
+									id = "vehicle/train/et30/dooropen/dooropen_tuerr_13.ani",
+								},
+								type = "FILE_REF",
+							},
+						},
+						materials = { "vehicle/waggon/EM30/BR830_rumpf_wagen.mtl", "vehicle/waggon/EM30/EM30_fenster.mtl", },
+						mesh = "vehicle/waggon/EM30/tuerr_13.msh",
+						name = "MSH_tuerr_13_6",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -12.03691, -1.40518, 0.5705, 1, },
+					},
+					{
+						_meshId = 32,
+						_origMeshId = 32,
+						animations = {
+							close_all_doors = {
+								params = {
+									id = "vehicle/train/et30/doorclose/doorclose_tuerr_14.ani",
+								},
+								type = "FILE_REF",
+							},
+							close_doors_right = {
+								params = {
+									id = "vehicle/train/et30/doorclose/doorclose_tuerr_14.ani",
+								},
+								type = "FILE_REF",
+							},
+							open_all_doors = {
+								params = {
+									id = "vehicle/train/et30/dooropen/dooropen_tuerr_14.ani",
+								},
+								type = "FILE_REF",
+							},
+							open_doors_right = {
+								params = {
+									id = "vehicle/train/et30/dooropen/dooropen_tuerr_14.ani",
+								},
+								type = "FILE_REF",
+							},
+						},
+						materials = { "vehicle/waggon/EM30/BR830_rumpf_wagen.mtl", "vehicle/waggon/EM30/EM30_fenster.mtl", },
+						mesh = "vehicle/waggon/EM30/tuerr_14.msh",
+						name = "MSH_tuerr_14_6",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -12.39771, -1.40518, 0.5705, 1, },
+					},
+					{
+						_meshId = 33,
+						_origMeshId = 33,
+						animations = {
+							close_all_doors = {
+								params = {
+									id = "vehicle/train/et30/doorclose/doorclose_tuerr_15.ani",
+								},
+								type = "FILE_REF",
+							},
+							close_doors_right = {
+								params = {
+									id = "vehicle/train/et30/doorclose/doorclose_tuerr_15.ani",
+								},
+								type = "FILE_REF",
+							},
+							open_all_doors = {
+								params = {
+									id = "vehicle/train/et30/dooropen/dooropen_tuerr_15.ani",
+								},
+								type = "FILE_REF",
+							},
+							open_doors_right = {
+								params = {
+									id = "vehicle/train/et30/dooropen/dooropen_tuerr_15.ani",
+								},
+								type = "FILE_REF",
+							},
+						},
+						materials = { "vehicle/waggon/EM30/BR830_rumpf_wagen.mtl", "vehicle/waggon/EM30/EM30_fenster.mtl", },
+						mesh = "vehicle/waggon/EM30/tuerr_15.msh",
+						name = "MSH_tuerr_15_6",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -12.39391, -1.40518, 0.5705, 1, },
+					},
+					{
+						_meshId = 34,
+						_origMeshId = 34,
+						animations = {
+							close_all_doors = {
+								params = {
+									id = "vehicle/train/et30/doorclose/doorclose_tuerr_16.ani",
+								},
+								type = "FILE_REF",
+							},
+							close_doors_right = {
+								params = {
+									id = "vehicle/train/et30/doorclose/doorclose_tuerr_16.ani",
+								},
+								type = "FILE_REF",
+							},
+							open_all_doors = {
+								params = {
+									id = "vehicle/train/et30/dooropen/dooropen_tuerr_16.ani",
+								},
+								type = "FILE_REF",
+							},
+							open_doors_right = {
+								params = {
+									id = "vehicle/train/et30/dooropen/dooropen_tuerr_16.ani",
+								},
+								type = "FILE_REF",
+							},
+						},
+						materials = { "vehicle/waggon/EM30/BR830_rumpf_wagen.mtl", "vehicle/waggon/EM30/EM30_fenster.mtl", },
+						mesh = "vehicle/waggon/EM30/tuerr_16.msh",
+						name = "MSH_tuerr_16_6",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -12.74896, -1.40518, 0.5705, 1, },
+					},
+					{
+						_meshId = 35,
+						_origMeshId = 35,
+						animations = {
+							close_all_doors = {
+								params = {
+									id = "vehicle/train/et30/doorclose/doorclose_tuerr_2.ani",
+								},
+								type = "FILE_REF",
+							},
+							close_doors_right = {
+								params = {
+									id = "vehicle/train/et30/doorclose/doorclose_tuerr_2.ani",
+								},
+								type = "FILE_REF",
+							},
+							open_all_doors = {
+								params = {
+									id = "vehicle/train/et30/dooropen/dooropen_tuerr_2.ani",
+								},
+								type = "FILE_REF",
+							},
+							open_doors_right = {
+								params = {
+									id = "vehicle/train/et30/dooropen/dooropen_tuerr_2.ani",
+								},
+								type = "FILE_REF",
+							},
+						},
+						materials = { "vehicle/waggon/EM30/BR830_rumpf_wagen.mtl", "vehicle/waggon/EM30/EM30_fenster.mtl", },
+						mesh = "vehicle/waggon/EM30/tuerr_2.msh",
+						name = "MSH_tuerr_2_6",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 12.38777, -1.40518, 0.5705, 1, },
+					},
+					{
+						_meshId = 36,
+						_origMeshId = 36,
+						animations = {
+							close_all_doors = {
+								params = {
+									id = "vehicle/train/et30/doorclose/doorclose_tuerr_3.ani",
+								},
+								type = "FILE_REF",
+							},
+							close_doors_right = {
+								params = {
+									id = "vehicle/train/et30/doorclose/doorclose_tuerr_3.ani",
+								},
+								type = "FILE_REF",
+							},
+							open_all_doors = {
+								params = {
+									id = "vehicle/train/et30/dooropen/dooropen_tuerr_3.ani",
+								},
+								type = "FILE_REF",
+							},
+							open_doors_right = {
+								params = {
+									id = "vehicle/train/et30/dooropen/dooropen_tuerr_3.ani",
+								},
+								type = "FILE_REF",
+							},
+						},
+						materials = { "vehicle/waggon/EM30/BR830_rumpf_wagen.mtl", "vehicle/waggon/EM30/EM30_fenster.mtl", },
+						mesh = "vehicle/waggon/EM30/tuerr_3.msh",
+						name = "MSH_tuerr_3_6",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 12.39158, -1.40518, 0.5705, 1, },
+					},
+					{
+						_meshId = 37,
+						_origMeshId = 37,
+						animations = {
+							close_all_doors = {
+								params = {
+									id = "vehicle/train/et30/doorclose/doorclose_tuerr_4.ani",
+								},
+								type = "FILE_REF",
+							},
+							close_doors_right = {
+								params = {
+									id = "vehicle/train/et30/doorclose/doorclose_tuerr_4.ani",
+								},
+								type = "FILE_REF",
+							},
+							open_all_doors = {
+								params = {
+									id = "vehicle/train/et30/dooropen/dooropen_tuerr_4.ani",
+								},
+								type = "FILE_REF",
+							},
+							open_doors_right = {
+								params = {
+									id = "vehicle/train/et30/dooropen/dooropen_tuerr_4.ani",
+								},
+								type = "FILE_REF",
+							},
+						},
+						materials = { "vehicle/waggon/EM30/BR830_rumpf_wagen.mtl", "vehicle/waggon/EM30/EM30_fenster.mtl", },
+						mesh = "vehicle/waggon/EM30/tuerr_4.msh",
+						name = "MSH_tuerr_4_6",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 12.04139, -1.40518, 0.5705, 1, },
+					},
+					{
+						_meshId = 38,
+						_origMeshId = 38,
+						animations = {
+							close_all_doors = {
+								params = {
+									id = "vehicle/train/et30/doorclose/doorclose_tuerr_5.ani",
+								},
+								type = "FILE_REF",
+							},
+							close_doors_right = {
+								params = {
+									id = "vehicle/train/et30/doorclose/doorclose_tuerr_5.ani",
+								},
+								type = "FILE_REF",
+							},
+							open_all_doors = {
+								params = {
+									id = "vehicle/train/et30/dooropen/dooropen_tuerr_5.ani",
+								},
+								type = "FILE_REF",
+							},
+							open_doors_right = {
+								params = {
+									id = "vehicle/train/et30/dooropen/dooropen_tuerr_5.ani",
+								},
+								type = "FILE_REF",
+							},
+						},
+						materials = { "vehicle/waggon/EM30/BR830_rumpf_wagen.mtl", "vehicle/waggon/EM30/EM30_fenster.mtl", },
+						mesh = "vehicle/waggon/EM30/tuerr_5.msh",
+						name = "MSH_tuerr_5_6",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0.72451, -1.40518, 0.5705, 1, },
+					},
+					{
+						_meshId = 39,
+						_origMeshId = 39,
+						animations = {
+							close_all_doors = {
+								params = {
+									id = "vehicle/train/et30/doorclose/doorclose_tuerr_6.ani",
+								},
+								type = "FILE_REF",
+							},
+							close_doors_right = {
+								params = {
+									id = "vehicle/train/et30/doorclose/doorclose_tuerr_6.ani",
+								},
+								type = "FILE_REF",
+							},
+							open_all_doors = {
+								params = {
+									id = "vehicle/train/et30/dooropen/dooropen_tuerr_6.ani",
+								},
+								type = "FILE_REF",
+							},
+							open_doors_right = {
+								params = {
+									id = "vehicle/train/et30/dooropen/dooropen_tuerr_6.ani",
+								},
+								type = "FILE_REF",
+							},
+						},
+						materials = { "vehicle/waggon/EM30/BR830_rumpf_wagen.mtl", "vehicle/waggon/EM30/EM30_fenster.mtl", },
+						mesh = "vehicle/waggon/EM30/tuerr_6.msh",
+						name = "MSH_tuerr_6_6",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0.36371, -1.40518, 0.5705, 1, },
+					},
+					{
+						_meshId = 40,
+						_origMeshId = 40,
+						animations = {
+							close_all_doors = {
+								params = {
+									id = "vehicle/train/et30/doorclose/doorclose_tuerr_7.ani",
+								},
+								type = "FILE_REF",
+							},
+							close_doors_right = {
+								params = {
+									id = "vehicle/train/et30/doorclose/doorclose_tuerr_7.ani",
+								},
+								type = "FILE_REF",
+							},
+							open_all_doors = {
+								params = {
+									id = "vehicle/train/et30/dooropen/dooropen_tuerr_7.ani",
+								},
+								type = "FILE_REF",
+							},
+							open_doors_right = {
+								params = {
+									id = "vehicle/train/et30/dooropen/dooropen_tuerr_7.ani",
+								},
+								type = "FILE_REF",
+							},
+						},
+						materials = { "vehicle/waggon/EM30/BR830_rumpf_wagen.mtl", "vehicle/waggon/EM30/EM30_fenster.mtl", },
+						mesh = "vehicle/waggon/EM30/tuerr_7.msh",
+						name = "MSH_tuerr_7_6",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0.36752, -1.40518, 0.5705, 1, },
+					},
+					{
+						_meshId = 41,
+						_origMeshId = 41,
+						animations = {
+							close_all_doors = {
+								params = {
+									id = "vehicle/train/et30/doorclose/doorclose_tuerr_8.ani",
+								},
+								type = "FILE_REF",
+							},
+							close_doors_right = {
+								params = {
+									id = "vehicle/train/et30/doorclose/doorclose_tuerr_8.ani",
+								},
+								type = "FILE_REF",
+							},
+							open_all_doors = {
+								params = {
+									id = "vehicle/train/et30/dooropen/dooropen_tuerr_8.ani",
+								},
+								type = "FILE_REF",
+							},
+							open_doors_right = {
+								params = {
+									id = "vehicle/train/et30/dooropen/dooropen_tuerr_8.ani",
+								},
+								type = "FILE_REF",
+							},
+						},
+						materials = { "vehicle/waggon/EM30/BR830_rumpf_wagen.mtl", "vehicle/waggon/EM30/EM30_fenster.mtl", },
+						mesh = "vehicle/waggon/EM30/tuerr_8.msh",
+						name = "MSH_tuerr_8_6",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0.01733, -1.40518, 0.5705, 1, },
+					},
+					{
+						_meshId = 42,
+						_origMeshId = 42,
+						animations = {
+							close_all_doors = {
+								params = {
+									id = "vehicle/train/et30/doorclose/doorclose_tuerr_9.ani",
+								},
+								type = "FILE_REF",
+							},
+							close_doors_right = {
+								params = {
+									id = "vehicle/train/et30/doorclose/doorclose_tuerr_9.ani",
+								},
+								type = "FILE_REF",
+							},
+							open_all_doors = {
+								params = {
+									id = "vehicle/train/et30/dooropen/dooropen_tuerr_9.ani",
+								},
+								type = "FILE_REF",
+							},
+							open_doors_right = {
+								params = {
+									id = "vehicle/train/et30/dooropen/dooropen_tuerr_9.ani",
+								},
+								type = "FILE_REF",
+							},
+						},
+						materials = { "vehicle/waggon/EM30/BR830_rumpf_wagen.mtl", "vehicle/waggon/EM30/EM30_fenster.mtl", },
+						mesh = "vehicle/waggon/EM30/tuerr_9.msh",
+						name = "MSH_tuerr_9_6",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -0.01076, -1.40518, 0.5705, 1, },
+					},
+				},
+				name = "RootNode",
+				transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+			},
+			static = false,
+			visibleFrom = 500,
+			visibleTo = 2500,
+		},
+	},
+	metadata = {
+		availability = {
+			yearFrom = 1968,
+			yearTo = 1985,
+		},
+		cost = {
+			price = -1,
+		},
+		description = {
+			name = _("br830_name"),
+		},
+		emission = {
+			idleEmission = -1,
+			powerEmission = -1,
+			speedEmission = -1,
+		},
+		maintenance = {
+			lifespan = 21915,
+			runningCosts = -1,
+		},
+		railVehicle = {
+			configs = {
+				{
+					axles = { "vehicle/waggon/EM30/rad.msh", },
+					backBackwardParts = { },
+					backForwardParts = { },
+					blinkingLights0 = { },
+					blinkingLights1 = { },
+					frontBackwardParts = { },
+					frontForwardParts = { },
+					innerBackwardParts = { },
+					innerForwardParts = { },
+				},
+				{
+					axles = { "vehicle/waggon/EM30/rad_LOD1.msh", },
+					backBackwardParts = { },
+					backForwardParts = { },
+					blinkingLights0 = { },
+					blinkingLights1 = { },
+					frontBackwardParts = { },
+					frontForwardParts = { },
+					innerBackwardParts = { },
+					innerForwardParts = { },
+				},
+				{
+					axles = { "vehicle/waggon/EM30/rad_LOD2.msh", },
+					backBackwardParts = { },
+					backForwardParts = { },
+					blinkingLights0 = { },
+					blinkingLights1 = { },
+					frontBackwardParts = { },
+					frontForwardParts = { },
+					innerBackwardParts = { },
+					innerForwardParts = { },
+				},
+			},
+			engines = { },
+			soundSet = {
+				name = "waggon_modern",
+			},
+			topSpeed = 33.333333333333,
+			weight = 34.5,
+		},
+		seatProvider = {
+			drivingLicense = "RAIL",
+			seats = {
+                {
+                    animation = "sitting",
+                    crew = false,
+                    group = 1,
+                    transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 10.3, -1.1, 1.2, 1, },
+                },
+                {
+                    animation = "sitting",
+                    crew = false,
+                    group = 1,
+                    transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 10.3, -0.6, 1.2, 1, },
+                },
+                {
+                    animation = "sitting",
+                    crew = false,
+                    group = 1,
+                    transf = { -1, 0, 0, 0, 0, -1, 0, 0, 0, 0, 1, 0, 11.35, -0.6, 1.2, 1, },
+                },
+                {
+                    animation = "sitting",
+                    crew = false,
+                    group = 1,
+                    transf = { -1, 0, 0, 0, 0, -1, 0, 0, 0, 0, 1, 0, 11.35, -1.1, 1.2, 1, },
+                },
+                {
+                    animation = "sitting",
+                    crew = false,
+                    group = 1,
+                    transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 8.5, -1.1, 1.2, 1, },
+                },
+                {
+                    animation = "sitting",
+                    crew = false,
+                    group = 1,
+                    transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 8.5, -0.6, 1.2, 1, },
+                },
+                {
+                    animation = "sitting",
+                    crew = false,
+                    group = 1,
+                    transf = { -1, 0, 0, 0, 0, -1, 0, 0, 0, 0, 1, 0, 9.55, -0.6, 1.2, 1, },
+                },
+                {
+                    animation = "sitting",
+                    crew = false,
+                    group = 1,
+                    transf = { -1, 0, 0, 0, 0, -1, 0, 0, 0, 0, 1, 0, 9.55, -1.1, 1.2, 1, },
+                },
+                {
+                    animation = "sitting",
+                    crew = false,
+                    group = 1,
+                    transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 6.8, -1.1, 1.2, 1, },
+                },
+                {
+                    animation = "sitting",
+                    crew = false,
+                    group = 1,
+                    transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 6.8, -0.6, 1.2, 1, },
+                },
+                {
+                    animation = "sitting",
+                    crew = false,
+                    group = 1,
+                    transf = { -1, 0, 0, 0, 0, -1, 0, 0, 0, 0, 1, 0, 7.8, -0.6, 1.2, 1, },
+                },
+                {
+                    animation = "sitting",
+                    crew = false,
+                    group = 1,
+                    transf = { -1, 0, 0, 0, 0, -1, 0, 0, 0, 0, 1, 0, 7.8, -1.1, 1.2, 1, },
+                },
+                {
+                    animation = "sitting",
+                    crew = false,
+                    group = 1,
+                    transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 5.0, -1.1, 1.2, 1, },
+                },
+                {
+                    animation = "sitting",
+                    crew = false,
+                    group = 1,
+                    transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 5.0, -0.6, 1.2, 1, },
+                },
+                {
+                    animation = "sitting",
+                    crew = false,
+                    group = 1,
+                    transf = { -1, 0, 0, 0, 0, -1, 0, 0, 0, 0, 1, 0, 6.1, -0.6, 1.2, 1, },
+                },
+                {
+                    animation = "sitting",
+                    crew = false,
+                    group = 1,
+                    transf = { -1, 0, 0, 0, 0, -1, 0, 0, 0, 0, 1, 0, 6.1, -1.1, 1.2, 1, },
+                },
+                {
+                    animation = "sitting",
+                    crew = false,
+                    group = 1,
+                    transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 3.15, -1.1, 1.2, 1, },
+                },
+                {
+                    animation = "sitting",
+                    crew = false,
+                    group = 1,
+                    transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 3.15, -0.6, 1.2, 1, },
+                },
+                {
+                    animation = "sitting",
+                    crew = false,
+                    group = 1,
+                    transf = { -1, 0, 0, 0, 0, -1, 0, 0, 0, 0, 1, 0, 4.3, -0.6, 1.2, 1, },
+                },
+                {
+                    animation = "sitting",
+                    crew = false,
+                    group = 1,
+                    transf = { -1, 0, 0, 0, 0, -1, 0, 0, 0, 0, 1, 0, 4.3, -1.1, 1.2, 1, },
+                },
+                {
+                    animation = "sitting",
+                    crew = false,
+                    group = 1,
+                    transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 1.4, -1.1, 1.2, 1, },
+                },
+                {
+                    animation = "sitting",
+                    crew = false,
+                    group = 1,
+                    transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 1.4, -0.6, 1.2, 1, },
+                },
+                {
+                    animation = "sitting",
+                    crew = false,
+                    group = 1,
+                    transf = { -1, 0, 0, 0, 0, -1, 0, 0, 0, 0, 1, 0, 2.5, -0.6, 1.2, 1, },
+                },
+                {
+                    animation = "sitting",
+                    crew = false,
+                    group = 1,
+                    transf = { -1, 0, 0, 0, 0, -1, 0, 0, 0, 0, 1, 0, 2.5, -1.1, 1.2, 1, },
+                },
+
+                -- first class
+                {
+                    animation = "sitting",
+                    crew = false,
+                    group = 1,
+                    transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -2.75, -1.0, 1.2, 1, },
+                },
+                {
+                    animation = "sitting",
+                    crew = false,
+                    group = 1,
+                    transf = { -1, 0, 0, 0, 0, -1, 0, 0, 0, 0, 1, 0, -1.45, -1.0, 1.2, 1, },
+                },
+                {
+                    animation = "sitting",
+                    crew = false,
+                    group = 1,
+                    transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -5.0, -1.0, 1.2, 1, },
+                },
+                {
+                    animation = "sitting",
+                    crew = false,
+                    group = 1,
+                    transf = { -1, 0, 0, 0, 0, -1, 0, 0, 0, 0, 1, 0, -3.45, -1.0, 1.2, 1, },
+                },
+                {
+                    animation = "sitting",
+                    crew = false,
+                    group = 1,
+                    transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -7.2, -1.0, 1.2, 1, },
+                },
+                {
+                    animation = "sitting",
+                    crew = false,
+                    group = 1,
+                    transf = { -1, 0, 0, 0, 0, -1, 0, 0, 0, 0, 1, 0, -5.6, -1.0, 1.2, 1, },
+                },
+                {
+                    animation = "sitting",
+                    crew = false,
+                    group = 1,
+                    transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -9.3, -1.0, 1.2, 1, },
+                },
+                {
+                    animation = "sitting",
+                    crew = false,
+                    group = 1,
+                    transf = { -1, 0, 0, 0, 0, -1, 0, 0, 0, 0, 1, 0, -7.85, -1.0, 1.2, 1, },
+                },
+                {
+                    animation = "sitting",
+                    crew = false,
+                    group = 1,
+                    transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -11.4, -1.0, 1.2, 1, },
+                },
+                {
+                    animation = "sitting",
+                    crew = false,
+                    group = 1,
+                    transf = { -1, 0, 0, 0, 0, -1, 0, 0, 0, 0, 1, 0, -10.0, -1.0, 1.2, 1, },
+                },
+
+
+                {
+                    animation = "sitting",
+                    crew = false,
+                    group = 1,
+                    transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 10.3, 1.1, 1.2, 1, },
+                },
+                {
+                    animation = "sitting",
+                    crew = false,
+                    group = 1,
+                    transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 10.3, 0.6, 1.2, 1, },
+                },
+                {
+                    animation = "sitting",
+                    crew = false,
+                    group = 1,
+                    transf = { -1, 0, 0, 0, 0, -1, 0, 0, 0, 0, 1, 0, 11.35, 0.6, 1.2, 1, },
+                },
+                {
+                    animation = "sitting",
+                    crew = false,
+                    group = 1,
+                    transf = { -1, 0, 0, 0, 0, -1, 0, 0, 0, 0, 1, 0, 11.35, 1.1, 1.2, 1, },
+                },
+                {
+                    animation = "sitting",
+                    crew = false,
+                    group = 1,
+                    transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 8.5, 1.1, 1.2, 1, },
+                },
+                {
+                    animation = "sitting",
+                    crew = false,
+                    group = 1,
+                    transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 8.5, 0.6, 1.2, 1, },
+                },
+                {
+                    animation = "sitting",
+                    crew = false,
+                    group = 1,
+                    transf = { -1, 0, 0, 0, 0, -1, 0, 0, 0, 0, 1, 0, 9.55, 0.6, 1.2, 1, },
+                },
+                {
+                    animation = "sitting",
+                    crew = false,
+                    group = 1,
+                    transf = { -1, 0, 0, 0, 0, -1, 0, 0, 0, 0, 1, 0, 9.55, 1.1, 1.2, 1, },
+                },
+                {
+                    animation = "sitting",
+                    crew = false,
+                    group = 1,
+                    transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 6.8, 1.1, 1.2, 1, },
+                },
+                {
+                    animation = "sitting",
+                    crew = false,
+                    group = 1,
+                    transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 6.8, 0.6, 1.2, 1, },
+                },
+                {
+                    animation = "sitting",
+                    crew = false,
+                    group = 1,
+                    transf = { -1, 0, 0, 0, 0, -1, 0, 0, 0, 0, 1, 0, 7.8, 0.6, 1.2, 1, },
+                },
+                {
+                    animation = "sitting",
+                    crew = false,
+                    group = 1,
+                    transf = { -1, 0, 0, 0, 0, -1, 0, 0, 0, 0, 1, 0, 7.8, 1.1, 1.2, 1, },
+                },
+                {
+                    animation = "sitting",
+                    crew = false,
+                    group = 1,
+                    transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 5.0, 1.1, 1.2, 1, },
+                },
+                {
+                    animation = "sitting",
+                    crew = false,
+                    group = 1,
+                    transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 5.0, 0.6, 1.2, 1, },
+                },
+                {
+                    animation = "sitting",
+                    crew = false,
+                    group = 1,
+                    transf = { -1, 0, 0, 0, 0, -1, 0, 0, 0, 0, 1, 0, 6.1, 0.6, 1.2, 1, },
+                },
+                {
+                    animation = "sitting",
+                    crew = false,
+                    group = 1,
+                    transf = { -1, 0, 0, 0, 0, -1, 0, 0, 0, 0, 1, 0, 6.1, 1.1, 1.2, 1, },
+                },
+                {
+                    animation = "sitting",
+                    crew = false,
+                    group = 1,
+                    transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 3.15, 1.1, 1.2, 1, },
+                },
+                {
+                    animation = "sitting",
+                    crew = false,
+                    group = 1,
+                    transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 3.15, 0.6, 1.2, 1, },
+                },
+                {
+                    animation = "sitting",
+                    crew = false,
+                    group = 1,
+                    transf = { -1, 0, 0, 0, 0, -1, 0, 0, 0, 0, 1, 0, 4.3, 0.6, 1.2, 1, },
+                },
+                {
+                    animation = "sitting",
+                    crew = false,
+                    group = 1,
+                    transf = { -1, 0, 0, 0, 0, -1, 0, 0, 0, 0, 1, 0, 4.3, 1.1, 1.2, 1, },
+                },
+
+                -- first class
+                {
+                    animation = "sitting",
+                    crew = false,
+                    group = 1,
+                    transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -2.75, 1.0, 1.2, 1, },
+                },
+                {
+                    animation = "sitting",
+                    crew = false,
+                    group = 1,
+                    transf = { -1, 0, 0, 0, 0, -1, 0, 0, 0, 0, 1, 0, -1.45, 1.0, 1.2, 1, },
+                },
+                {
+                    animation = "sitting",
+                    crew = false,
+                    group = 1,
+                    transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -5.0, 1.0, 1.2, 1, },
+                },
+                {
+                    animation = "sitting",
+                    crew = false,
+                    group = 1,
+                    transf = { -1, 0, 0, 0, 0, -1, 0, 0, 0, 0, 1, 0, -3.45, 1.0, 1.2, 1, },
+                },
+                {
+                    animation = "sitting",
+                    crew = false,
+                    group = 1,
+                    transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -7.2, 1.0, 1.2, 1, },
+                },
+                {
+                    animation = "sitting",
+                    crew = false,
+                    group = 1,
+                    transf = { -1, 0, 0, 0, 0, -1, 0, 0, 0, 0, 1, 0, -5.6, 1.0, 1.2, 1, },
+                },
+                {
+                    animation = "sitting",
+                    crew = false,
+                    group = 1,
+                    transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -9.3, 1.0, 1.2, 1, },
+                },
+                {
+                    animation = "sitting",
+                    crew = false,
+                    group = 1,
+                    transf = { -1, 0, 0, 0, 0, -1, 0, 0, 0, 0, 1, 0, -7.85, 1.0, 1.2, 1, },
+                },
+                {
+                    animation = "sitting",
+                    crew = false,
+                    group = 1,
+                    transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -11.4, 1.0, 1.2, 1, },
+                },
+                {
+                    animation = "sitting",
+                    crew = false,
+                    group = 1,
+                    transf = { -1, 0, 0, 0, 0, -1, 0, 0, 0, 0, 1, 0, -10.0, 1.0, 1.2, 1, },
+                },
+                {
+                    animation = "sitting",
+                    crew = false,
+                    group = 1,
+                    transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -2.75, 0.5, 1.2, 1, },
+                },
+                {
+                    animation = "sitting",
+                    crew = false,
+                    group = 1,
+                    transf = { -1, 0, 0, 0, 0, -1, 0, 0, 0, 0, 1, 0, -1.45, 0.5, 1.2, 1, },
+                },
+                {
+                    animation = "sitting",
+                    crew = false,
+                    group = 1,
+                    transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -5.0, 0.5, 1.2, 1, },
+                },
+                {
+                    animation = "sitting",
+                    crew = false,
+                    group = 1,
+                    transf = { -1, 0, 0, 0, 0, -1, 0, 0, 0, 0, 1, 0, -3.45, 0.5, 1.2, 1, },
+                },
+                {
+                    animation = "sitting",
+                    crew = false,
+                    group = 1,
+                    transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -7.2, 0.5, 1.2, 1, },
+                },
+                {
+                    animation = "sitting",
+                    crew = false,
+                    group = 1,
+                    transf = { -1, 0, 0, 0, 0, -1, 0, 0, 0, 0, 1, 0, -5.6, 0.5, 1.2, 1, },
+                },
+                {
+                    animation = "sitting",
+                    crew = false,
+                    group = 1,
+                    transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -9.3, 0.5, 1.2, 1, },
+                },
+                {
+                    animation = "sitting",
+                    crew = false,
+                    group = 1,
+                    transf = { -1, 0, 0, 0, 0, -1, 0, 0, 0, 0, 1, 0, -7.85, 0.5, 1.2, 1, },
+                },
+                {
+                    animation = "sitting",
+                    crew = false,
+                    group = 1,
+                    transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -11.4, 0.5, 1.2, 1, },
+                },
+                {
+                    animation = "sitting",
+                    crew = false,
+                    group = 1,
+                    transf = { -1, 0, 0, 0, 0, -1, 0, 0, 0, 0, 1, 0, -10.0, 0.5, 1.2, 1, },
+                },
+			},
+		},
+		transportVehicle = {
+			carrier = "RAIL",
+			compartments = {
+				{
+					{
+						{
+							capacity = 148,
+							type = "PASSENGERS",
+						},
+					},
+				},
+			},
+			loadSpeed = 6,
+			multipleUnitOnly = true,
+			reversible = false,
+		},
+	},
+	version = 1,
+}
+end

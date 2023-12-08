@@ -1,0 +1,54 @@
+function data()
+return {
+	matConfigs = {
+		{ 0, }, 
+	},
+	subMeshes = {
+		{
+			indices = {
+				normal = {
+					count = 150888,
+					offset = 698884,
+				},
+				position = {
+					count = 150888,
+					offset = 246220,
+				},
+				tangent = {
+					count = 150888,
+					offset = 547996,
+				},
+				uv0 = {
+					count = 150888,
+					offset = 397108,
+				},
+			},
+			materials = {
+				"vehicle/train/ET30/ET30_innen_kopf.mtl", 
+			},
+		}, 
+	},
+	vertexAttr = {
+		normal = {
+			count = 33612,
+			numComp = 3,
+			offset = 212608,
+		},
+		position = {
+			count = 91656,
+			numComp = 3,
+			offset = 0,
+		},
+		tangent = {
+			count = 85648,
+			numComp = 4,
+			offset = 126960,
+		},
+		uv0 = {
+			count = 35304,
+			numComp = 2,
+			offset = 91656,
+		},
+	},
+}
+end
